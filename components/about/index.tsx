@@ -3,8 +3,13 @@ import Layout from 'components/common/layout'
 import Section from 'components/common/section'
 import SEO from 'components/common/seo'
 import Title from 'components/common/title'
+import { Content } from 'types/cms/about'
 
-const About = (): JSX.Element => (
+type Props = {
+  contents: Content[]
+}
+
+const About = ({ contents }: Props): JSX.Element => (
   <Layout>
     <SEO title="about" article />
     <Title text="about" />
@@ -13,7 +18,9 @@ const About = (): JSX.Element => (
         <Arrow2nd />
       </div>
       <div className="text-center">
-        <Section title="タイトル" text="テキストをここに" />
+        {contents.map((item) => (
+          <Section key={item.title} {...item} />
+        ))}
       </div>
     </div>
   </Layout>
