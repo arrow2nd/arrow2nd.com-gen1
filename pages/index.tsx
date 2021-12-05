@@ -1,6 +1,6 @@
-import Top from 'components/top'
+import Home from 'components/home'
 import type { NextPage } from 'next'
 
-const Home: NextPage = () => <Top />
+const HomePage: NextPage = () => <Home />
 
-export default Home
+export default HomePage
