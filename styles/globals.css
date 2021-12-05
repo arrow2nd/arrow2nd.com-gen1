@@ -1,16 +1,39 @@
-html,
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .transition-anim {
+    animation: fadeIn 0.8s ease-in-out 0s 1 normal;
+    -webkit-animation: fadeIn 0.8s ease-in-out 0s 1 normal;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  background-color: #faf8f7;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
+a,
+p,
+span {
+  transform: rotate(0.05deg);
 }

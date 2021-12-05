@@ -1,6 +1,9 @@
 {
   "name": "arrow2nd.com",
   "private": true,
+  "description": "つくったものをまとめたページ",
+  "author": "arrow2nd",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -8,6 +11,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.16",
     "next": "12.0.7",
     "react": "17.0.2",
     "react-dom": "17.0.2"
@@ -15,8 +22,13 @@
   "devDependencies": {
     "@types/node": "16.11.11",
     "@types/react": "17.0.37",
+    "autoprefixer": "^10.4.0",
     "eslint": "8.4.0",
     "eslint-config-next": "12.0.7",
+    "eslint-config-prettier": "^8.3.0",
+    "postcss": "^8.4.4",
+    "prettier": "^2.5.1",
+    "tailwindcss": "^2.2.19",
     "typescript": "4.5.2"
   }
 }
