@@ -1,4 +1,4 @@
-export type Content = {
+export type AboutContent = {
   title: string
   text: string
 }

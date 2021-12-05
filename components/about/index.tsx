@@ -3,10 +3,10 @@ import Layout from 'components/common/layout'
 import Section from 'components/common/section'
 import SEO from 'components/common/seo'
 import Title from 'components/common/title'
-import { Content } from 'types/cms/about'
+import { AboutContent } from 'types/cms/about'
 
 type Props = {
-  contents: Content[]
+  contents: AboutContent[]
 }
 
 const About = ({ contents }: Props): JSX.Element => (
