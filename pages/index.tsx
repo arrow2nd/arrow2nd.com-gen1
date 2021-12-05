@@ -1,12 +1,6 @@
-import Layout from 'components/common/layout'
+import Top from 'components/top'
 import type { NextPage } from 'next'
 
-const Home: NextPage = () => {
-  return (
-    <Layout>
-      <p>Test!</p>
-    </Layout>
-  )
-}
+const Home: NextPage = () => <Top />
 
 export default Home

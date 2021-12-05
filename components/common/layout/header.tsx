@@ -4,7 +4,7 @@ import { PageLinks } from 'data/page-links'
 
 const Header = (): JSX.Element => (
   <nav className="flex flex-row px-8 md:px-10 py-6 w-full items-center">
-    <Link href="/">
+    <Link href="/" passHref>
       <a>
         <Image
           className="border border-gray-200 rounded-full"
