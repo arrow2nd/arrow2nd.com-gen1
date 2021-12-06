@@ -11,7 +11,7 @@ type Props = {
 
 const About = ({ contents }: Props): JSX.Element => (
   <Layout>
-    <SEO title="about" article />
+    <SEO title="about" />
     <Title text="about" />
     <div className="transition-anim">
       <div className="flex mt-16 justify-center">
