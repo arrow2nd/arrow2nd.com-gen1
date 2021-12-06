@@ -31,7 +31,10 @@ export const getStaticProps = async (context: GetStaticPropsContext) => {
   })
 
   const data = await Client.getList<WorkContent>({
-    endpoint: 'works'
+    endpoint: 'works',
+    queries: {
+      orders: 'publishedAt'
+    }
   })
   const contents = data.contents.filter(
     (e) => e.category.name === currentCategory

@@ -2,6 +2,7 @@ import Layout from 'components/common/layout'
 import SEO from 'components/common/seo'
 import Title from 'components/common/title'
 import Tab from 'components/category/tab'
+import Card from 'components/category/card'
 import type { CategoryContent } from 'types/cms/category'
 import type { WorkContent } from 'types/cms/work'
 
@@ -20,12 +21,17 @@ const Category = ({
     <SEO title={currentCategory} />
     <Title text="works" />
     <Tab current={currentCategory} categories={categories} />
-    {contents.map((e) => (
-      <div key={e.title}>
-        <p>{e.title}</p>
-        <p>{e.description}</p>
-      </div>
-    ))}
+    <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-12 md:mt-16 transition-anim">
+      {contents.map(({ id, title, description, images }) => (
+        <Card
+          key={id}
+          id={id}
+          title={title}
+          description={description}
+          image={images[0].image}
+        />
+      ))}
+    </div>
   </Layout>
 )
 
