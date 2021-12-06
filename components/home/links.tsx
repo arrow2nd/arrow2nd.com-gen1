@@ -1,4 +1,5 @@
 import Link from 'next/link'
+
 import { PageLinks } from 'data/page-links'
 
 type Props = {

@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 import { Icons } from 'data/icons'
 
 type Props = {

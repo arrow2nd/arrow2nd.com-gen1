@@ -1,10 +1,9 @@
-const Section = ({
-  title,
-  text
-}: {
+type Props = {
   title: string
   text: string
-}): JSX.Element => {
+}
+
+const Section = ({ title, text }: Props): JSX.Element => {
   const lines = text.split('\n').map((line) => <p key={line}>{line}</p>)
 
   return (

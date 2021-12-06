@@ -1,4 +1,5 @@
 import Link from 'next/link'
+
 import type { CategoryContent } from 'types/cms/category'
 
 type Props = {

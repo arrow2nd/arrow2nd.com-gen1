@@ -1,13 +1,16 @@
-import Notfound from 'components/404'
-import Works from 'components/works'
-import { Client } from 'libs/client'
-import { isDraft, toStringId } from 'libs/util'
 import type {
-  NextPage,
   GetStaticPaths,
   GetStaticPropsContext,
-  InferGetStaticPropsType
+  InferGetStaticPropsType,
+  NextPage
 } from 'next'
+
+import Notfound from 'components/404'
+import Works from 'components/works'
+
+import { Client } from 'libs/client'
+import { isDraft, toStringId } from 'libs/util'
+
 import type { WorkContent } from 'types/cms/work'
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>

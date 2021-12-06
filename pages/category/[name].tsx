@@ -1,12 +1,15 @@
+import type {
+  GetStaticPaths,
+  GetStaticPropsContext,
+  InferGetStaticPropsType,
+  NextPage
+} from 'next'
+
 import Category from 'components/category'
+
 import { Client } from 'libs/client'
 import { toStringId } from 'libs/util'
-import type {
-  NextPage,
-  InferGetStaticPropsType,
-  GetStaticPaths,
-  GetStaticPropsContext
-} from 'next'
+
 import type { CategoryContent } from 'types/cms/category'
 import type { WorkContent } from 'types/cms/work'
 

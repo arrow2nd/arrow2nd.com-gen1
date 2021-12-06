@@ -1,4 +1,5 @@
 import FaIcon from 'components/common/fa-icon'
+
 import { AccountLinks } from 'data/account-links'
 
 type Props = {

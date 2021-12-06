@@ -1,6 +1,9 @@
+import type { InferGetStaticPropsType, NextPage } from 'next'
+
 import About from 'components/about'
+
 import { Client } from 'libs/client'
-import type { NextPage, InferGetStaticPropsType } from 'next'
+
 import type { SectionContent } from 'types/cms/section'
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>

@@ -1,6 +1,8 @@
+import type { NextApiRequest, NextApiResponse } from 'next'
+
 import { Client } from 'libs/client'
 import { toStringId } from 'libs/util'
-import type { NextApiRequest, NextApiResponse } from 'next'
+
 import type { WorkContent } from 'types/cms/work'
 
 const Preview = async (req: NextApiRequest, res: NextApiResponse) => {

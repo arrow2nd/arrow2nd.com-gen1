@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
+
 import { Site } from 'data/site'
 
 type Props = {

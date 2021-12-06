@@ -1,15 +1,15 @@
-import 'styles/globals.css'
-import '@fortawesome/fontawesome-svg-core/styles.css'
-import type { AppProps } from 'next/app'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faDownload, faLink } from '@fortawesome/free-solid-svg-icons'
+import '@fortawesome/fontawesome-svg-core/styles.css'
 import {
-  faTwitter,
-  faMastodon,
   faGithub,
+  faGooglePlay,
   faLine,
-  faGooglePlay
+  faMastodon,
+  faTwitter
 } from '@fortawesome/free-brands-svg-icons'
+import { faDownload, faLink } from '@fortawesome/free-solid-svg-icons'
+import type { AppProps } from 'next/app'
+import 'styles/globals.css'
 
 library.add(
   faDownload,

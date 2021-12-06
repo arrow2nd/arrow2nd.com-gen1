@@ -1,5 +1,5 @@
-import Arrow2nd from 'components/common/arrow2nd'
 import Accounts from 'components/common/accounts'
+import Arrow2nd from 'components/common/arrow2nd'
 import SEO from 'components/common/seo'
 import Links from 'components/home/links'
 

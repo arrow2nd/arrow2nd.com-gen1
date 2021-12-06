@@ -1,6 +1,7 @@
-import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import Image from 'next/image'
 import { Carousel as RRCarousel } from 'react-responsive-carousel'
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
+
 import type { ImageContent } from 'types/cms/work'
 
 type Props = {
