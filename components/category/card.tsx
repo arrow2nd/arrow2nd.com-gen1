@@ -17,7 +17,7 @@ const Card = ({ id, title, description, imageContent }: Props): JSX.Element => {
   return (
     <div>
       <Link href={href} passHref>
-        <a className="block border border-gray-200 z-0 rounded-3xl shadow-">
+        <a className="block border border-gray-200 z-0 rounded-3xl shadow-md">
           <Image
             className="rounded-3xl filter hover:brightness-75 transition-all"
             src={image.url}
