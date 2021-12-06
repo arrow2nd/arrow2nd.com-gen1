@@ -17,7 +17,7 @@ const Links = ({ className }: Props): JSX.Element => {
 
   return (
     <div
-      className={`px-4 py-2 bg-gray-200 text-natural-gray rounded-full ${className}`}
+      className={`px-4 py-2 bg-blue-gray text-natural-gray rounded-full shadow-md ${className}`}
     >
       {pageLinks}
     </div>

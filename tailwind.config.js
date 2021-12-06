@@ -10,6 +10,7 @@ module.exports = {
         'natural-white': '#faf8f7',
         'natural-black': '#1c1c1c',
         'natural-gray': '#464646',
+        'blue-gray': '#ebeff2',
         arrow2nd: '#5B94FF'
       },
       letterSpacing: {

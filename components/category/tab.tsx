@@ -17,7 +17,7 @@ const Tab = ({ current, categories }: Props): JSX.Element => {
     return (
       <Link href={`/category/${name}`} key={name} passHref>
         <a
-          className={`inline-block m-2 md:m-1 px-4 md:px-5 py-0.5 md:py-1 hover:bg-natural-black rounded-full ${textStyle} tracking-widest transition-colors`}
+          className={`inline-block m-2 md:m-1 px-5 py-1 hover:bg-natural-black rounded-full ${textStyle} tracking-widest transition-colors`}
         >
           {name}
         </a>
