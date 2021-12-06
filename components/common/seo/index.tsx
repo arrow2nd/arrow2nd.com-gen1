@@ -32,7 +32,7 @@ const SEO = ({
   const seo = {
     title: title ? titleTemplate.replace('%s', title) : defaultTitle,
     description: desc || defaultDescription,
-    image: `${baseUrl}${image || defaultImage}`,
+    image: image || `${baseUrl}${defaultImage}`,
     url: `${baseUrl}${asPath}`
   }
 
