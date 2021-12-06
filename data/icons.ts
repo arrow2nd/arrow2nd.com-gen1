@@ -1,7 +1,7 @@
 import { IconName, IconPrefix } from '@fortawesome/fontawesome-svg-core'
 
 type IconType = {
-  [name: string]: [plefix: IconPrefix, name: IconName]
+  [name: string]: [prefix: IconPrefix, name: IconName]
 }
 
 export const Icons: IconType = {
