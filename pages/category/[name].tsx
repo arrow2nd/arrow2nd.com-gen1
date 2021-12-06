@@ -1,5 +1,6 @@
 import Category from 'components/category'
 import { Client } from 'libs/client'
+import { toStringId } from 'libs/util'
 import type {
   NextPage,
   InferGetStaticPropsType,
@@ -24,7 +25,11 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps = async (context: GetStaticPropsContext) => {
   const { params } = context
-  const currentCategory = typeof params?.name === 'string' ? params?.name : ''
+
+  const currentCategory = params?.name && toStringId(params.name)
+  if (!currentCategory) {
+    throw new Error('[ Error ] category name not found')
+  }
 
   const categories = await Client.getList<CategoryContent>({
     endpoint: 'category'
