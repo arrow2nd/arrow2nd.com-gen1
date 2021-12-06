@@ -1,3 +1,5 @@
 .cache
-package.json
+.next
 public
+node_modules
+package.json

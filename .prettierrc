@@ -6,5 +6,15 @@
   "singleQuote": true,
   "trailingComma": "none",
   "bracketSpacing": true,
-  "arrowParens": "always"
+  "arrowParens": "always",
+  "importOrder": [
+    "<THIRD_PARTY_MODULES>",
+    "^components/(.*)$",
+    "^libs/(.*)$",
+    "^data/(.*)$",
+    "^types/(.*)$",
+    "^[./]"
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
 }
