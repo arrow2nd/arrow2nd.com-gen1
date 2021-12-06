@@ -5,9 +5,7 @@ import { AboutContent } from 'types/cms/about'
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>
 
-const AboutPage: NextPage<Props> = ({ contents }: Props) => (
-  <About contents={contents} />
-)
+const AboutPage: NextPage<Props> = (props: Props) => <About {...props} />
 
 export default AboutPage
 
