@@ -6,17 +6,18 @@ import { toStringId } from 'libs/util'
 import type { WorkContent } from 'types/cms/work'
 
 const Preview = async (req: NextApiRequest, res: NextApiResponse) => {
-  const workId = toStringId(req.query.slug)
+  const slug = toStringId(req.query.slug)
 
   // slugが存在しない
-  if (!workId) {
+  if (!slug) {
     return res.status(404).end()
   }
 
   const content = await Client.get<WorkContent>({
     endpoint: 'works',
-    contentId: workId
-  })
+    contentId: slug,
+    queries: { draftKey: toStringId(req.query.draftKey) }
+  }).catch((err) => console.error(err))
 
   // slugが正しくない
   if (!content) {
