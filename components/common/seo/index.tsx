@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import { Site } from 'data/site'
 import { useRouter } from 'next/router'
+import { Site } from 'data/site'
 
 type Props = {
   title?: string

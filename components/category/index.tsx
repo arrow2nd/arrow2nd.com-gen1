@@ -16,23 +16,27 @@ const Category = ({
   currentCategory,
   categories,
   contents
-}: Props): JSX.Element => (
-  <Layout>
-    <SEO title={currentCategory} />
-    <Title text="works" />
-    <Tab current={currentCategory} categories={categories} />
-    <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-12 md:mt-16 transition-anim">
-      {contents.map(({ id, title, description, images }) => (
-        <Card
-          key={id}
-          id={id}
-          title={title}
-          description={description}
-          imageContent={images[0]}
-        />
-      ))}
-    </div>
-  </Layout>
-)
+}: Props): JSX.Element => {
+  const cards = contents.map(({ id, title, description, images }) => (
+    <Card
+      key={id}
+      id={id}
+      title={title}
+      description={description}
+      imageContent={images[0]}
+    />
+  ))
+
+  return (
+    <Layout>
+      <SEO title={currentCategory} />
+      <Title text="works" />
+      <Tab current={currentCategory} categories={categories} />
+      <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-12 md:mt-16 transition-anim">
+        {cards}
+      </div>
+    </Layout>
+  )
+}
 
 export default Category

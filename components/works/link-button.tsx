@@ -1,5 +1,5 @@
 import FaIcon from 'components/common/fa-icon'
-import { LinkContent } from 'types/cms/work'
+import type { LinkContent } from 'types/cms/work'
 
 const LinkButton = ({ icon, text, href }: LinkContent): JSX.Element => (
   <div

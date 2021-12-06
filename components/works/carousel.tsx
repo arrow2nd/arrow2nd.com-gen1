@@ -10,6 +10,7 @@ type Props = {
 const Carousel = ({ images }: Props): JSX.Element => {
   const carouselImages = images.map(({ image, alt }) => {
     const { url, width, height } = image
+
     return (
       <Image
         key={url}

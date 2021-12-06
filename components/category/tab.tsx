@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { CategoryContent } from 'types/cms/category'
+import type { CategoryContent } from 'types/cms/category'
 
 type Props = {
   current: string

@@ -1,4 +1,4 @@
-import { AboutContent } from 'types/cms/about'
+import { SectionContent } from 'types/cms/section'
 
 export type LinkContent = {
   icon: string[]
@@ -23,6 +23,6 @@ export type WorkContent = {
   }
   title: string
   description: string
-  sections: AboutContent[]
+  sections: SectionContent[]
   links: LinkContent[]
 }
