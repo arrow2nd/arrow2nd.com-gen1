@@ -1,4 +1,4 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import FaIcon from 'components/common/fa-icon'
 import { AccountLinks } from 'data/account-links'
 
 type Props = {
@@ -15,7 +15,7 @@ const Accounts = ({ className = '' }: Props): JSX.Element => (
         rel="noopener noreferrer"
         key={icon}
       >
-        <FontAwesomeIcon icon={['fab', icon]} />
+        <FaIcon name={icon} />
       </a>
     ))}
   </div>

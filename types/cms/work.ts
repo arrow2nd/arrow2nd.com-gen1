@@ -1,26 +1,28 @@
-import { IconName } from '@fortawesome/fontawesome-common-types'
 import { AboutContent } from 'types/cms/about'
 
+export type LinkContent = {
+  icon: string[]
+  href: string
+  text: string
+}
+
 export type ImageContent = {
-  url: string
-  width: number
-  height: number
+  image: {
+    url: string
+    width: number
+    height: number
+  }
+  alt: string
 }
 
 export type WorkContent = {
   id: string
-  images: {
-    image: ImageContent
-  }[]
+  images: ImageContent[]
   category: {
     name: string
   }
   title: string
   description: string
   sections: AboutContent[]
-  links: {
-    icon: IconName
-    href: string
-    text: string
-  }[]
+  links: LinkContent[]
 }

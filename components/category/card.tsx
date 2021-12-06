@@ -6,11 +6,12 @@ type Props = {
   id: string
   title: string
   description: string
-  image: ImageContent
+  imageContent: ImageContent
 }
 
-const Card = ({ id, title, description, image }: Props): JSX.Element => {
+const Card = ({ id, title, description, imageContent }: Props): JSX.Element => {
   const href = `/works/${id}`
+  const { image, alt } = imageContent
 
   return (
     <div>
@@ -19,7 +20,7 @@ const Card = ({ id, title, description, image }: Props): JSX.Element => {
           <Image
             className="rounded-3xl filter hover:brightness-75 transition-all"
             src={image.url}
-            alt={`${title}のスクリーンショット`}
+            alt={alt}
             width={image.width}
             height={image.height}
             layout="responsive"

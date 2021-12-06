@@ -1,7 +1,5 @@
-import { IconName } from '@fortawesome/fontawesome-common-types'
-
 type AccountLink = {
-  icon: IconName
+  icon: string
   href: string
 }
 

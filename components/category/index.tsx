@@ -28,7 +28,7 @@ const Category = ({
           id={id}
           title={title}
           description={description}
-          image={images[0].image}
+          imageContent={images[0]}
         />
       ))}
     </div>
