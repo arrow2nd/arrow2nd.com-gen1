@@ -1,16 +1,6 @@
-import Layout from 'components/common/layout'
-import SEO from 'components/common/seo'
-import Title from 'components/common/title'
-import Section from 'components/common/section'
+import Notfound from 'components/404'
+import type { NextPage } from 'next'
 
-const NotFoundPage = (): JSX.Element => (
-  <Layout>
-    <SEO title="404 Not Found" />
-    <Title text="Opps!" />
-    <div className="text-center">
-      <Section title="404 Not Found" text="ページが見つかりませんでした 😿" />
-    </div>
-  </Layout>
-)
+const NotFoundPage: NextPage = () => <Notfound />
 
 export default NotFoundPage
