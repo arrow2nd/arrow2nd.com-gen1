@@ -38,21 +38,28 @@ export const getStaticProps = async (context: GetStaticPropsContext) => {
     endpoint: 'category'
   })
 
-  const data = await Client.getList<WorkContent>({
+  const categoryId = categories.contents.find(
+    (e) => e.name === currentCategory
+  )?.id
+
+  if (!categoryId) {
+    throw new Error('[ Error ] category id not found')
+  }
+
+  const works = await Client.getList<WorkContent>({
     endpoint: 'works',
     queries: {
-      orders: 'publishedAt'
+      filters: `category[equals]${categoryId}`,
+      orders: '-publishedAt',
+      limit: 50
     }
   })
-  const contents = data.contents.filter(
-    (e) => e.category.name === currentCategory
-  )
 
   return {
     props: {
       currentCategory,
       categories: categories.contents,
-      contents
+      contents: works.contents
     }
   }
 }
