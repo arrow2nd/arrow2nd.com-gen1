@@ -38,6 +38,7 @@ export const getStaticProps = async (context: GetStaticPropsContext) => {
     endpoint: 'category'
   })
 
+  // カテゴリIDを取得
   const categoryId = categories.contents.find(
     (e) => e.name === currentCategory
   )?.id
@@ -46,6 +47,7 @@ export const getStaticProps = async (context: GetStaticPropsContext) => {
     throw new Error('[ Error ] category id not found')
   }
 
+  // カテゴリ毎の作品を公開日降順で取得
   const works = await Client.getList<WorkContent>({
     endpoint: 'works',
     queries: {

@@ -289,6 +289,11 @@
     "@babel/helper-validator-identifier" "^7.15.7"
     to-fast-properties "^2.0.0"
 
+"@corex/deepmerge@^2.6.34":
+  version "2.6.133"
+  resolved "https://registry.yarnpkg.com/@corex/deepmerge/-/deepmerge-2.6.133.tgz#eb3aaa7e197ea69cbb129b4e988e669622089063"
+  integrity sha512-KrAg1G7NaXDJ/bihDHof3MKnE6KC0mKE89o7qTSHPaxs122pBB14Ll+QFyMo4FyTqpMIRcFJlv02G9PcDxDMEA==
+
 "@eslint/eslintrc@^1.0.5":
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/@eslint/eslintrc/-/eslintrc-1.0.5.tgz#33f1b838dbf1f923bfa517e008362b78ddbbf318"
@@ -2416,6 +2421,13 @@ make-dir@^3.0.2:
   dependencies:
     semver "^6.0.0"
 
+matcher@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/matcher/-/matcher-4.0.0.tgz#a42a05a09aaed92e2d241eb91fddac689461ea51"
+  integrity sha512-S6x5wmcDmsDRRU/c2dkccDwQPXoFczc5+HpQ2lON8pnvHlnvHAHj5WlLVvw6n6vNyHuVugYrFohYxbS+pvFpKQ==
+  dependencies:
+    escape-string-regexp "^4.0.0"
+
 md5.js@^1.3.4:
   version "1.3.5"
   resolved "https://registry.yarnpkg.com/md5.js/-/md5.js-1.3.5.tgz#b5d07b8e3216e3e27cd728d72f70d1e6a342005f"
@@ -2510,6 +2522,15 @@ natural-compare@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=
+
+next-sitemap@^1.6.203:
+  version "1.6.203"
+  resolved "https://registry.yarnpkg.com/next-sitemap/-/next-sitemap-1.6.203.tgz#bfa2e67fea2bab1efed60cda743e7f98dc00bb46"
+  integrity sha512-WigcoqIUNbXQa2GnwOiCOydGx/XHCS4kRtIPNEsc8DGX2XvJtbAJKRxcidZZ2KihTAtwwCu1XQ4Hbof4mJbvLg==
+  dependencies:
+    "@corex/deepmerge" "^2.6.34"
+    matcher "^4.0.0"
+    minimist "^1.2.5"
 
 next@12.0.7:
   version "12.0.7"

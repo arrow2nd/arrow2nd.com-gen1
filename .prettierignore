@@ -1,5 +1,7 @@
 .cache
 .next
+.vercel
 public
+out
 node_modules
 package.json
