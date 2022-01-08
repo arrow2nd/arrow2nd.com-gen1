@@ -36,7 +36,7 @@ const Card = ({ id, title, description, imageContent }: Props): JSX.Element => {
       animate={controls}
       variants={fadeInUp}
     >
-      <Link href={href} passHref>
+      <Link href={href} passHref scroll={false}>
         <a className="block border border-gray-200 z-0 rounded-3xl shadow-md">
           <Image
             className="rounded-3xl hover:brightness-75 transition-all"
@@ -50,7 +50,7 @@ const Card = ({ id, title, description, imageContent }: Props): JSX.Element => {
         </a>
       </Link>
       <div className="mt-4 ml-1">
-        <Link href={href} passHref>
+        <Link href={href} passHref scroll={false}>
           <a className="inline-block hover:text-arrow2nd transition-colors">
             {title}
           </a>

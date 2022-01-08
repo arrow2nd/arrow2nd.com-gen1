@@ -9,6 +9,7 @@ export const transition = {
     show: {
       opacity: 1,
       transition: {
+        duration: 0.3,
         ease: 'easeInOut'
       }
     }
