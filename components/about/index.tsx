@@ -1,3 +1,7 @@
+import { motion } from 'framer-motion'
+
+import { fadeInPopup } from 'animations/variants'
+
 import Arrow2nd from 'components/common/arrow2nd'
 import Layout from 'components/common/layout'
 import Sections from 'components/common/sections'
@@ -14,12 +18,15 @@ const About = ({ contents }: Props): JSX.Element => (
   <Layout>
     <SEO title="about" />
     <Title text="about" />
-    <div className="transition-anim">
-      <div className="flex mt-16 justify-center">
-        <Arrow2nd />
-      </div>
-      <Sections contents={contents} />
-    </div>
+    <motion.div
+      className="flex mt-16 justify-center"
+      initial="hidden"
+      animate="visible"
+      variants={fadeInPopup}
+    >
+      <Arrow2nd />
+    </motion.div>
+    <Sections contents={contents} />
   </Layout>
 )
 

@@ -1,5 +1,10 @@
+import { motion, useAnimation } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useEffect } from 'react'
+import { useInView } from 'react-intersection-observer'
+
+import { fadeInUp } from 'animations/variants'
 
 import type { ImageContent } from 'types/cms/work'
 
@@ -11,11 +16,26 @@ type Props = {
 }
 
 const Card = ({ id, title, description, imageContent }: Props): JSX.Element => {
+  const controls = useAnimation()
+  const { ref, inView } = useInView({
+    threshold: 0.25,
+    triggerOnce: true
+  })
+
+  useEffect(() => {
+    controls.start(inView ? 'visible' : 'hidden')
+  }, [controls, inView])
+
   const href = `/works/${id}`
   const { image, alt } = imageContent
 
   return (
-    <div>
+    <motion.div
+      ref={ref}
+      initial="hidden"
+      animate={controls}
+      variants={fadeInUp}
+    >
       <Link href={href} passHref>
         <a className="block border border-gray-200 z-0 rounded-3xl shadow-md">
           <Image
@@ -36,7 +56,7 @@ const Card = ({ id, title, description, imageContent }: Props): JSX.Element => {
         </Link>
         <p className="block text-sm text-natural-gray">{description}</p>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
