@@ -45,6 +45,7 @@ const Card = ({ id, title, description, imageContent }: Props): JSX.Element => {
             width={image.width}
             height={image.height}
             layout="responsive"
+            loading="eager"
           />
         </a>
       </Link>
