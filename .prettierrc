@@ -12,6 +12,7 @@
     "^animations/(.*)$",
     "^components/(.*)$",
     "^data/(.*)$",
+    "^hooks/(.*)$",
     "^libs/(.*)$",
     "^styles/(.*)$",
     "^types/(.*)$",
