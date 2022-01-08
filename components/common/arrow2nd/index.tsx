@@ -11,6 +11,7 @@ const Arrow2nd = ({ size = 200 }: Props): JSX.Element => (
     alt="arrow2nd"
     width={size}
     height={size}
+    loading="eager"
   />
 )
 

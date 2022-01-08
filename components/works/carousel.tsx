@@ -9,9 +9,18 @@ type Props = {
 }
 
 const Carousel = ({ images }: Props): JSX.Element => {
-  const carouselImages = images.map(({ image, alt }) => {
+  const carouselImages = images.map(({ image, alt }, idx) => {
     const { url, width, height } = image
-    return <Image key={url} src={url} alt={alt} width={width} height={height} />
+    return (
+      <Image
+        key={url}
+        src={url}
+        alt={alt}
+        width={width}
+        height={height}
+        loading={!idx ? 'eager' : 'lazy'}
+      />
+    )
   })
 
   return (
