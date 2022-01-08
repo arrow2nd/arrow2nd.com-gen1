@@ -9,9 +9,10 @@
   "arrowParens": "always",
   "importOrder": [
     "<THIRD_PARTY_MODULES>",
+    "^animations/(.*)$",
     "^components/(.*)$",
-    "^libs/(.*)$",
     "^data/(.*)$",
+    "^libs/(.*)$",
     "^types/(.*)$",
     "^[./]"
   ],
