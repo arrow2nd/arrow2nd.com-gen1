@@ -21,7 +21,7 @@ const Works = ({ contents }: Props): JSX.Element => {
   return (
     <Layout>
       <SEO title={title} desc={description} image={images[0].image.url} />
-      <div className="mx-auto max-w-3xl transition-anim">
+      <div className="mx-auto max-w-3xl">
         <Carousel images={images} />
         <Title text={title} description={description} />
         <Sections contents={sections} />

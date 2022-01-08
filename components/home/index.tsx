@@ -4,7 +4,7 @@ import SEO from 'components/common/seo'
 import Links from 'components/home/links'
 
 const Home = (): JSX.Element => (
-  <div className="flex flex-col h-screen justify-center items-center transition-anim">
+  <div className="flex flex-col h-screen justify-center items-center">
     <SEO />
     <Arrow2nd />
     <span className="mt-6 text-3xl text-natural-black tracking-super">
