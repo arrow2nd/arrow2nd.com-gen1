@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { useEffect } from 'react'
 import { useInView } from 'react-intersection-observer'
 
-import { fadeInUp } from 'animations/variants'
+import { fadeInUp, hover } from 'animations/variants'
 
 import type { DynamicImage } from 'types/image'
 
@@ -37,24 +37,24 @@ const Card = ({ id, title, description, thumbnail }: Props): JSX.Element => {
       variants={fadeInUp}
     >
       <Link href={href} passHref>
-        <a className="block border border-gray-100 z-0 rounded-3xl shadow-md hover:brightness-75 transition-all">
-          <Image
-            {...imageProps}
-            className="rounded-3xl"
-            alt={alt}
-            layout="responsive"
-            placeholder="blur"
-          />
+        <a className="block overflow-hidden rounded-3xl shadow-md">
+          <motion.div whileHover={hover}>
+            <Image
+              {...imageProps}
+              className="rounded-3xl"
+              alt={alt}
+              layout="responsive"
+              placeholder="blur"
+            />
+          </motion.div>
         </a>
       </Link>
-      <div className="mt-4 ml-1">
-        <Link href={href} passHref>
-          <a className="inline-block hover:text-arrow2nd transition-colors">
-            {title}
-          </a>
-        </Link>
-        <p className="block text-sm text-natural-gray">{description}</p>
-      </div>
+      <Link href={href} passHref>
+        <a className="block mt-4 ml-1 hover:text-arrow2nd transition-colors">
+          <p>{title}</p>
+          <p className="text-sm text-natural-gray">{description}</p>
+        </a>
+      </Link>
     </motion.div>
   )
 }

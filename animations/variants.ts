@@ -26,3 +26,12 @@ export const fadeInUp = {
     }
   }
 }
+
+export const hover = {
+  scale: 1.1,
+  filter: 'brightness(0.75)',
+  transition: {
+    duration: 0.3,
+    ease: 'easeInOut'
+  }
+}
