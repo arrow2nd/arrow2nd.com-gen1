@@ -37,7 +37,7 @@ const Card = ({ id, title, description, thumbnail }: Props): JSX.Element => {
       variants={fadeInUp}
     >
       <Link href={href} passHref>
-        <a className="block overflow-hidden rounded-3xl shadow-md">
+        <a className="block border border-gray-300 overflow-hidden rounded-3xl shadow-md">
           <motion.div whileHover={hover}>
             <Image
               {...imageProps}
