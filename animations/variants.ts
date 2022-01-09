@@ -1,21 +1,3 @@
-export const transition = {
-  initial: 'hidden',
-  animate: 'show',
-  exit: 'hidden',
-  variants: {
-    hidden: {
-      opacity: 0
-    },
-    show: {
-      opacity: 1,
-      transition: {
-        duration: 0.3,
-        ease: 'easeInOut'
-      }
-    }
-  }
-}
-
 export const fadeInPopup = {
   hidden: {
     opacity: 0

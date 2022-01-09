@@ -17,6 +17,15 @@ module.exports = {
       },
       letterSpacing: {
         super: '.25rem'
+      },
+      animation: {
+        fadeIn: 'fadeIn 0.6s cubic-bezier(0.33, 1, 0.68, 1) 0s 1 normal'
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 }
+        }
       }
     }
   },

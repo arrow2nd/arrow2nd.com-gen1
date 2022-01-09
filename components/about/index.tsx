@@ -18,15 +18,17 @@ const About = ({ contents }: Props): JSX.Element => (
   <Layout>
     <SEO title="about" />
     <Title text="about" />
-    <motion.div
-      className="flex mt-16 justify-center"
-      initial="hidden"
-      animate="visible"
-      variants={fadeInPopup}
-    >
-      <Arrow2nd />
-    </motion.div>
-    <Sections contents={contents} />
+    <div className="animate-fadeIn">
+      <motion.div
+        className="flex mt-16 justify-center"
+        initial="hidden"
+        animate="visible"
+        variants={fadeInPopup}
+      >
+        <Arrow2nd />
+      </motion.div>
+      <Sections contents={contents} />
+    </div>
   </Layout>
 )
 
