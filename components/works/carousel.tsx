@@ -12,6 +12,7 @@ const Carousel = ({ images }: Props): JSX.Element => {
   const carouselImages = images.map(({ imageProps, alt }) => (
     <Image
       {...imageProps}
+      className="rounded-lg"
       key={imageProps.src}
       alt={alt}
       layout="responsive"
