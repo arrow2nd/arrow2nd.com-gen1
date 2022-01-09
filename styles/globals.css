@@ -2,31 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-  .transition-anim {
-    animation: fadeIn 0.8s ease-in-out 0s 1 normal;
-    -webkit-animation: fadeIn 0.8s ease-in-out 0s 1 normal;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
+/* Windows環境でのフォントのジャギー対策 */
 a,
 p,
 span {

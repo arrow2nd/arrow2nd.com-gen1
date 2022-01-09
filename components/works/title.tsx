@@ -6,7 +6,7 @@ type Props = {
 }
 
 const Title = ({ text, description }: Props): JSX.Element => (
-  <div className="mt-8 text-center">
+  <div className="mt-10 text-center">
     <h2 className="text-xl md:text-2xl text-natural-black tracking-widest">
       {text}
     </h2>

@@ -9,6 +9,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 import { faDownload, faLink } from '@fortawesome/free-solid-svg-icons'
 import type { AppProps } from 'next/app'
+
 import 'styles/globals.css'
 
 library.add(

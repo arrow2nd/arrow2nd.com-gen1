@@ -6,14 +6,14 @@ import { Site } from 'data/site'
 type Props = {
   title?: string
   desc?: string
-  image?: string
+  imageUrl?: string
   article?: boolean
 }
 
 const SEO = ({
   title = '',
   desc = '',
-  image = '',
+  imageUrl = '',
   article = false
 }: Props): JSX.Element => {
   const { asPath } = useRouter()
@@ -27,12 +27,13 @@ const SEO = ({
     twitterUsername
   } = Site
 
+  // URL末尾のスラッシュを削除
   const baseUrl = originUrl ? originUrl.slice(0, -1) : ''
 
   const seo = {
     title: title ? titleTemplate.replace('%s', title) : defaultTitle,
     description: desc || defaultDescription,
-    image: image || `${baseUrl}${defaultImage}`,
+    imageUrl: imageUrl || `${baseUrl}${defaultImage}`,
     url: `${baseUrl}${asPath}`
   }
 
@@ -40,12 +41,12 @@ const SEO = ({
     <Head>
       <title>{seo.title}</title>
       <meta name="description" content={seo.description} />
-      <meta name="image" content={seo.image} />
+      <meta name="image" content={seo.imageUrl} />
       <meta property="og:url" content={seo.url} />
       {(article ? true : null) && <meta property="og:type" content="article" />}
       <meta property="og:title" content={seo.title} />
       <meta property="og:description" content={seo.description} />
-      <meta property="og:image" content={seo.image} />
+      <meta property="og:image" content={seo.imageUrl} />
       <meta
         name="twitter:card"
         content={article ? 'summary_large_image' : 'summary'}
@@ -53,7 +54,7 @@ const SEO = ({
       <meta name="twitter:creator" content={twitterUsername} />
       <meta name="twitter:title" content={seo.title} />
       <meta name="twitter:description" content={seo.description} />
-      <meta name="twitter:image" content={seo.image} />
+      <meta name="twitter:image" content={seo.imageUrl} />
     </Head>
   )
 }
