@@ -1,7 +1,6 @@
 import Image from 'next/image'
-import RSCarousel from 'react-slick'
-import 'slick-carousel/slick/slick-theme.css'
-import 'slick-carousel/slick/slick.css'
+import { Carousel as RRCarousel } from 'react-responsive-carousel'
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
 
 import type { ImageContent } from 'types/cms/work'
 
@@ -11,33 +10,28 @@ type Props = {
 
 const Carousel = ({ images }: Props): JSX.Element => {
   const carouselImages = images.map(({ image, alt }, idx) => (
-    <div key={image.url}>
-      <Image
-        src={image.url}
-        alt={alt}
-        width={image.width}
-        height={image.height}
-        loading={!idx ? 'eager' : 'lazy'}
-      />
-    </div>
+    <Image
+      key={image.url}
+      src={image.url}
+      alt={alt}
+      width={image.width}
+      height={image.height}
+      loading={!idx ? 'eager' : 'lazy'}
+    />
   ))
 
   return (
-    <RSCarousel
-      className="mx-auto border border-gray-200 leading-none"
-      autoplay
-      infinite
-      speed={600}
-      arrows={false}
-      dots
-      appendDots={(dots) => (
-        <div className="">
-          <ul style={{ margin: '0px' }}> {dots} </ul>
-        </div>
-      )}
+    <RRCarousel
+      className="mx-auto border border-gray-200"
+      autoPlay
+      interval={6000}
+      transitionTime={600}
+      infiniteLoop
+      showStatus={false}
+      showThumbs={false}
     >
       {carouselImages}
-    </RSCarousel>
+    </RRCarousel>
   )
 }
 
