@@ -30,7 +30,7 @@ const LinkButton = ({ icon, text, href }: LinkContent): JSX.Element => {
       variants={fadeInUp}
     >
       <FaIcon name={icon[0]} />
-      <span className="ml-1.5 inline-block">{text}</span>
+      <span className="inline-block ml-1.5">{text}</span>
     </motion.a>
   )
 }

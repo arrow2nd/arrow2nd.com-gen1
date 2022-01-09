@@ -17,10 +17,9 @@ import type { DynamicImage } from 'types/image'
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>
 
-const WorksPage: NextPage<Props> = (props: Props) => {
+const WorksPage: NextPage<Props> = (props: Props) =>
   // コンテンツが無い場合は404ページを返す
-  return props.contents ? <Works {...props} /> : <Notfound />
-}
+  props.contents ? <Works {...props} /> : <Notfound />
 
 export default WorksPage
 
@@ -45,6 +44,7 @@ export const getStaticProps = async (context: GetStaticPropsContext) => {
     ? { draftKey: previewData.draftKey }
     : {}
 
+  // コンテンツを取得
   const contents = await Client.get<WorkContent>({
     endpoint: 'works',
     contentId: id,

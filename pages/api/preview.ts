@@ -8,22 +8,24 @@ import type { WorkContent } from 'types/cms/work'
 const Preview = async (req: NextApiRequest, res: NextApiResponse) => {
   const slug = toStringId(req.query.slug)
 
-  // slugが存在しない
+  // slugが存在しない場合は404エラー
   if (!slug) {
     return res.status(404).end()
   }
 
+  // 下書きのコンテンツを取得
   const content = await Client.get<WorkContent>({
     endpoint: 'works',
     contentId: slug,
     queries: { draftKey: toStringId(req.query.draftKey) }
   }).catch((err) => console.error(err))
 
-  // slugが正しくない
+  // コンテンツが無い場合はslugが正しくないので401エラー
   if (!content) {
     return res.status(401).json({ message: 'Invalid slug' })
   }
 
+  // レスポンス組み立て
   res.setPreviewData({
     slug: content.id,
     draftKey: req.query.draftKey

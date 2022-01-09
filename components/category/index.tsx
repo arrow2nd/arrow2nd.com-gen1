@@ -1,5 +1,3 @@
-import Card from 'components/category/card'
-import Tab from 'components/category/tab'
 import Layout from 'components/common/layout'
 import SEO from 'components/common/seo'
 import Title from 'components/common/title'
@@ -7,6 +5,9 @@ import Title from 'components/common/title'
 import type { CategoryContent } from 'types/cms/category'
 import type { WorkContent } from 'types/cms/work'
 import type { DynamicImage } from 'types/image'
+
+import Card from './card'
+import Tab from './tab'
 
 type Props = {
   currentCategory: string

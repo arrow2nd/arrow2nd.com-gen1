@@ -1,7 +1,8 @@
 import Accounts from 'components/common/accounts'
 import Arrow2nd from 'components/common/arrow2nd'
 import SEO from 'components/common/seo'
-import Links from 'components/home/links'
+
+import Links from './links'
 
 const Home = (): JSX.Element => (
   <div className="flex flex-col h-screen justify-center items-center animate-fadeIn">

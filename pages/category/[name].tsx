@@ -13,12 +13,11 @@ import { toStringId } from 'libs/util'
 
 import type { CategoryContent } from 'types/cms/category'
 import type { WorkContent } from 'types/cms/work'
-import { DynamicImage } from 'types/image'
+import type { DynamicImage } from 'types/image'
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>
 
 const CategoryPage: NextPage<Props> = (props: Props) => <Category {...props} />
-
 export default CategoryPage
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -31,11 +30,13 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps = async (context: GetStaticPropsContext) => {
   const { params } = context
 
+  // 選択されているカテゴリ
   const currentCategory = params?.name && toStringId(params.name)
   if (!currentCategory) {
     throw new Error('[ Error ] category name not found')
   }
 
+  // カテゴリリストを取得
   const categories = await Client.getList<CategoryContent>({
     endpoint: 'category'
   })
@@ -49,7 +50,7 @@ export const getStaticProps = async (context: GetStaticPropsContext) => {
     throw new Error('[ Error ] category id not found')
   }
 
-  // カテゴリ毎の作品を公開日降順で取得
+  // カテゴリIDに該当する作品を公開日降順で取得
   const works = await Client.getList<WorkContent>({
     endpoint: 'works',
     queries: {

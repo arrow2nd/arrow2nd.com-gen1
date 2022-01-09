@@ -21,7 +21,7 @@ const Carousel = ({ images }: Props): JSX.Element => {
 
   return (
     <RRCarousel
-      className="mx-auto border border-gray-200"
+      className="mx-auto border border-gray-300 rounded-lg overflow-hidden"
       autoPlay
       interval={6000}
       transitionTime={600}

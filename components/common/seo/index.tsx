@@ -27,6 +27,7 @@ const SEO = ({
     twitterUsername
   } = Site
 
+  // URL末尾のスラッシュを削除
   const baseUrl = originUrl ? originUrl.slice(0, -1) : ''
 
   const seo = {

@@ -1,6 +1,6 @@
-import Section from 'components/common/sections/section'
-
 import type { SectionContent } from 'types/cms/section'
+
+import Section from './section'
 
 type Props = {
   contents: SectionContent[]

@@ -1,12 +1,13 @@
 import Layout from 'components/common/layout'
 import Sections from 'components/common/sections'
 import SEO from 'components/common/seo'
-import Carousel from 'components/works/carousel'
-import LinkButton from 'components/works/link-button'
-import Title from 'components/works/title'
 
 import type { WorkContent } from 'types/cms/work'
 import type { DynamicImage } from 'types/image'
+
+import Carousel from './carousel'
+import LinkButton from './link-button'
+import Title from './title'
 
 type Props = {
   contents: WorkContent
