@@ -52,7 +52,7 @@ export const getStaticProps = async (context: GetStaticPropsContext) => {
   }).catch((err) => console.error(err))
 
   if (!contents) {
-    return { props: { contents: undefined, plaiceholder: undefined } }
+    return { props: { contents: null, plaiceholder: null } }
   }
 
   // 画像のプレースホルダを生成
