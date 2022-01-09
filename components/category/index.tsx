@@ -6,25 +6,28 @@ import Title from 'components/common/title'
 
 import type { CategoryContent } from 'types/cms/category'
 import type { WorkContent } from 'types/cms/work'
+import type { DynamicImage } from 'types/image'
 
 type Props = {
   currentCategory: string
   categories: CategoryContent[]
   contents: WorkContent[]
+  thumbnails: DynamicImage[]
 }
 
 const Category = ({
   currentCategory,
   categories,
-  contents
+  contents,
+  thumbnails
 }: Props): JSX.Element => {
-  const cards = contents.map(({ id, title, description, images }) => (
+  const cards = contents.map(({ id, title, description }, idx) => (
     <Card
       key={id}
       id={id}
       title={title}
       description={description}
-      imageContent={images[0]}
+      thumbnail={thumbnails[idx]}
     />
   ))
 

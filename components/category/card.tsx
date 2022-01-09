@@ -6,16 +6,16 @@ import { useInView } from 'react-intersection-observer'
 
 import { fadeInUp } from 'animations/variants'
 
-import type { ImageContent } from 'types/cms/work'
+import type { DynamicImage } from 'types/image'
 
 type Props = {
   id: string
   title: string
   description: string
-  imageContent: ImageContent
+  thumbnail: DynamicImage
 }
 
-const Card = ({ id, title, description, imageContent }: Props): JSX.Element => {
+const Card = ({ id, title, description, thumbnail }: Props): JSX.Element => {
   const controls = useAnimation()
   const { ref, inView } = useInView({
     threshold: 0.25,
@@ -27,7 +27,7 @@ const Card = ({ id, title, description, imageContent }: Props): JSX.Element => {
   }, [controls, inView])
 
   const href = `/works/${id}`
-  const { image, alt } = imageContent
+  const { imageProps, alt } = thumbnail
 
   return (
     <motion.div
@@ -37,15 +37,13 @@ const Card = ({ id, title, description, imageContent }: Props): JSX.Element => {
       variants={fadeInUp}
     >
       <Link href={href} passHref>
-        <a className="block border border-gray-200 z-0 rounded-3xl shadow-md">
+        <a className="block border border-gray-100 z-0 rounded-3xl shadow-md hover:brightness-75 transition-all">
           <Image
-            className="rounded-3xl hover:brightness-75 transition-all"
-            src={image.url}
+            {...imageProps}
+            className="rounded-3xl"
             alt={alt}
-            width={image.width}
-            height={image.height}
             layout="responsive"
-            loading="eager"
+            placeholder="blur"
           />
         </a>
       </Link>

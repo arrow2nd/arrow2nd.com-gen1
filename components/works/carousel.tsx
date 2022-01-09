@@ -2,21 +2,20 @@ import Image from 'next/image'
 import { Carousel as RRCarousel } from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 
-import type { ImageContent } from 'types/cms/work'
+import type { DynamicImage } from 'types/image'
 
 type Props = {
-  images: ImageContent[]
+  images: DynamicImage[]
 }
 
 const Carousel = ({ images }: Props): JSX.Element => {
-  const carouselImages = images.map(({ image, alt }, idx) => (
+  const carouselImages = images.map(({ imageProps, alt }) => (
     <Image
-      key={image.url}
-      src={image.url}
+      {...imageProps}
+      key={imageProps.src}
       alt={alt}
-      width={image.width}
-      height={image.height}
-      loading={!idx ? 'eager' : 'lazy'}
+      layout="responsive"
+      placeholder="blur"
     />
   ))
 

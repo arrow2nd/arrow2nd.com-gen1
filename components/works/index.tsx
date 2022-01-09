@@ -6,13 +6,16 @@ import LinkButton from 'components/works/link-button'
 import Title from 'components/works/title'
 
 import type { WorkContent } from 'types/cms/work'
+import type { DynamicImage } from 'types/image'
 
 type Props = {
   contents: WorkContent
+  images: DynamicImage[]
 }
 
-const Works = ({ contents }: Props): JSX.Element => {
-  const { images, title, description, sections, links } = contents
+const Works = ({ contents, images }: Props): JSX.Element => {
+  const { title, description, sections, links } = contents
+  const imageUrl = contents.images[0].image.url
 
   const linkButtons = links.map((link) => (
     <LinkButton key={link.text} {...link} />
@@ -20,7 +23,7 @@ const Works = ({ contents }: Props): JSX.Element => {
 
   return (
     <Layout>
-      <SEO title={title} desc={description} image={images[0].image.url} />
+      <SEO title={title} desc={description} imageUrl={imageUrl} />
       <div className="mx-auto max-w-3xl animate-fadeIn">
         <Carousel images={images} />
         <Title text={title} description={description} />

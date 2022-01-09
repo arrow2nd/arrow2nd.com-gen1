@@ -4,6 +4,7 @@ import type {
   InferGetStaticPropsType,
   NextPage
 } from 'next'
+import { getPlaiceholder } from 'plaiceholder'
 
 import Notfound from 'components/404'
 import Works from 'components/works'
@@ -12,16 +13,13 @@ import { Client } from 'libs/client'
 import { isDraft, toStringId } from 'libs/util'
 
 import type { WorkContent } from 'types/cms/work'
+import type { DynamicImage } from 'types/image'
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>
 
-const WorksPage: NextPage<Props> = ({ contents }: Props) => {
-  // コンテンツが無い場合404を返す
-  if (!contents) {
-    return <Notfound />
-  }
-
-  return <Works contents={contents} />
+const WorksPage: NextPage<Props> = (props: Props) => {
+  // コンテンツが無い場合は404ページを返す
+  return props.contents ? <Works {...props} /> : <Notfound />
 }
 
 export default WorksPage
@@ -54,12 +52,21 @@ export const getStaticProps = async (context: GetStaticPropsContext) => {
   }).catch((err) => console.error(err))
 
   if (!contents) {
-    return { notFound: true }
+    return { props: { contents: undefined, plaiceholder: undefined } }
   }
+
+  // 画像のプレースホルダを生成
+  const images: DynamicImage[] = await Promise.all(
+    contents.images.map(async ({ image, alt }) => {
+      const { base64, img } = await getPlaiceholder(image.url)
+      return { imageProps: { ...img, blurDataURL: base64 }, alt }
+    })
+  )
 
   return {
     props: {
-      contents
+      contents,
+      images
     }
   }
 }

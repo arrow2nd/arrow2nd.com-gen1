@@ -19,7 +19,7 @@ module.exports = {
         super: '.25rem'
       },
       animation: {
-        fadeIn: 'fadeIn 0.6s cubic-bezier(0.33, 1, 0.68, 1) 0s 1 normal'
+        fadeIn: 'fadeIn 0.8s cubic-bezier(0.33, 1, 0.68, 1) 0s 1 normal'
       },
       keyframes: {
         fadeIn: {
