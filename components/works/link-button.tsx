@@ -21,7 +21,7 @@ const LinkButton = ({ icon, text, href }: LinkContent): JSX.Element => {
 
   return (
     <motion.a
-      className={`inline-block m-2 px-6 py-1.5 text-sm md:text-base text-natural-white bg-natural-gray hover:bg-black rounded-full shadow-md transition-colors`}
+      className={`inline-block m-2 px-6 py-1.5 w-52 md:w-auto text-sm md:text-base text-natural-white bg-natural-gray hover:bg-black rounded-full shadow-md transition-colors`}
       ref={ref}
       href={href}
       target="_blank"
