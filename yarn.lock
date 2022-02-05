@@ -567,9 +567,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@trivago/prettier-plugin-sort-imports@npm:^3.1.1":
-  version: 3.1.1
-  resolution: "@trivago/prettier-plugin-sort-imports@npm:3.1.1"
+"@trivago/prettier-plugin-sort-imports@npm:^3.2.0":
+  version: 3.2.0
+  resolution: "@trivago/prettier-plugin-sort-imports@npm:3.2.0"
   dependencies:
     "@babel/core": 7.13.10
     "@babel/generator": 7.13.9
@@ -580,7 +580,7 @@ __metadata:
     lodash: 4.17.21
   peerDependencies:
     prettier: 2.x
-  checksum: 55c6e2d99319ccf4864f6e9a72ee81219b9a2aee962b989b6b2c4d113587daa95f0b96c803d08047790fa27e830a34bf75091e099ca9a088921fd36827af6116
+  checksum: 22461433fa0dc82621713cdfb88f8f527c6c41729e9859bb7f0106ef23c35b0da591ee7fed63516be7e8df5604dc8055f0c7e200fed1ef97f44000c9fe25a890
   languageName: node
   linkType: hard
 
@@ -591,10 +591,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^17.0.14":
-  version: 17.0.14
-  resolution: "@types/node@npm:17.0.14"
-  checksum: cc059ce29686bad5890685f45741826a1a7d1d27382464f6d5fa00b72ba239f6f5b8245a7fa5a56c23ce928030dc76b165a4ab0b86dc078f05b44597d8fe1a46
+"@types/node@npm:^17.0.15":
+  version: 17.0.15
+  resolution: "@types/node@npm:17.0.15"
+  checksum: aa64ecf4fbcf9888e794dcdc20e98c49cdcb102b17e57c44ca56943904732d6cc250e766f8448a3cd71d6a40a4b597bd83c565e5bd9b982733fa3f9813d5c291
   languageName: node
   linkType: hard
 
@@ -612,14 +612,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:17.0.38":
-  version: 17.0.38
-  resolution: "@types/react@npm:17.0.38"
+"@types/react@npm:17.0.39":
+  version: 17.0.39
+  resolution: "@types/react@npm:17.0.39"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: 4079f4f959cd4a4bfaeda8b89fe8a1b1f8bdc9d87acfdc5f74a0b39cec9ec6a470724357c62778c0f063180b360c250e920c5a142f1dbcda67d9cc25a6d43a85
+  checksum: bf04d3c2894559012710d595553e12b422d3b91cd8f4f7e122d8cb044ba9c2ba17f6e8a4e09581359cc5509ddc59cd8c8fabd6774f3505a40a45393f074d6e6e
   languageName: node
   linkType: hard
 
@@ -936,14 +936,14 @@ __metadata:
     "@fortawesome/free-brands-svg-icons": ^5.15.4
     "@fortawesome/free-solid-svg-icons": ^5.15.4
     "@fortawesome/react-fontawesome": ^0.1.17
-    "@trivago/prettier-plugin-sort-imports": ^3.1.1
-    "@types/node": ^17.0.14
-    "@types/react": 17.0.38
+    "@trivago/prettier-plugin-sort-imports": ^3.2.0
+    "@types/node": ^17.0.15
+    "@types/react": 17.0.39
     autoprefixer: ^10.4.2
     eslint: 8.8.0
     eslint-config-next: 12.0.10
     eslint-config-prettier: ^8.3.0
-    framer-motion: ^6.2.3
+    framer-motion: ^6.2.4
     microcms-js-sdk: ^2.0.0
     next: 12.0.10
     next-sitemap: ^2.1.8
@@ -2012,9 +2012,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"framer-motion@npm:^6.2.3":
-  version: 6.2.3
-  resolution: "framer-motion@npm:6.2.3"
+"framer-motion@npm:^6.2.4":
+  version: 6.2.4
+  resolution: "framer-motion@npm:6.2.4"
   dependencies:
     "@emotion/is-prop-valid": ^0.8.2
     framesync: 6.0.1
@@ -2028,7 +2028,7 @@ __metadata:
   dependenciesMeta:
     "@emotion/is-prop-valid":
       optional: true
-  checksum: ad4b40ca7419e51e743fa91371480b8e404e4a8673c4c1db11a323665a1040777c90a92087292a5702326e452e9d56ad3a77b40ba4d69021eb0e89db29f9e569
+  checksum: 71b2fefba015812bfbb9041a5a7aebabb0181a58f33467a45c91746d25db50dd2dcb79e5d90c7d329acb45cab259e8cb503d8a0b5406f4615dfca739c91edd25
   languageName: node
   linkType: hard
 
