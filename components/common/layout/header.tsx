@@ -16,8 +16,8 @@ const Header = (): JSX.Element => {
   return (
     <nav className="flex flex-row px-8 md:px-10 py-6 w-full items-center">
       <Link href="/" passHref>
-        <a>
-          <Arrow2nd size={45} />
+        <a className="inline-flex rounded-full border border-gray-300">
+          <Arrow2nd className="bg-white" size={48} />
         </a>
       </Link>
       <div className="ml-auto">{pageLinks}</div>
