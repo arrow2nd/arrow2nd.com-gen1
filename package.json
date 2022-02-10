@@ -12,9 +12,9 @@
     "fmt": "prettier --write ."
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.36",
-    "@fortawesome/free-brands-svg-icons": "^5.15.4",
-    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/fontawesome-svg-core": "^1.3.0",
+    "@fortawesome/free-brands-svg-icons": "^6.0.0",
+    "@fortawesome/free-solid-svg-icons": "^6.0.0",
     "@fortawesome/react-fontawesome": "^0.1.17",
     "framer-motion": "^6.2.4",
     "microcms-js-sdk": "^2.0.0",
@@ -24,20 +24,20 @@
     "react-dom": "17.0.2",
     "react-intersection-observer": "^8.33.1",
     "react-responsive-carousel": "^3.2.22",
-    "sharp": "^0.30.0"
+    "sharp": "^0.30.1"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^3.2.0",
-    "@types/node": "^17.0.15",
+    "@types/node": "^17.0.17",
     "@types/react": "17.0.39",
     "autoprefixer": "^10.4.2",
     "eslint": "8.8.0",
     "eslint-config-next": "12.0.10",
     "eslint-config-prettier": "^8.3.0",
-    "next-sitemap": "^2.1.8",
+    "next-sitemap": "^2.1.13",
     "postcss": "^8.4.6",
     "prettier": "^2.5.1",
-    "tailwindcss": "^3.0.18",
+    "tailwindcss": "^3.0.19",
     "typescript": "4.5.5"
   },
   "packageManager": "yarn@3.1.1"
