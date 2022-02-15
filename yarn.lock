@@ -947,7 +947,7 @@ __metadata:
     microcms-js-sdk: ^2.0.0
     next: 12.0.10
     next-sitemap: ^2.1.13
-    plaiceholder: ^2.2.0
+    plaiceholder: ^2.3.0
     postcss: ^8.4.6
     prettier: ^2.5.1
     react: 17.0.2
@@ -3131,14 +3131,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-fetch@npm:2.6.2":
-  version: 2.6.2
-  resolution: "node-fetch@npm:2.6.2"
-  checksum: de367eae1dfbc0e12283c1cf92256ea7fba7eac8655e2e51ebb217727162396fc6cf24689ef9fc6accf075e3991e2ffaa061f7cfaa958215329649b2297ff06d
-  languageName: node
-  linkType: hard
-
-"node-fetch@npm:^2.6.1":
+"node-fetch@npm:2.6.7, node-fetch@npm:^2.6.1":
   version: 2.6.7
   resolution: "node-fetch@npm:2.6.7"
   dependencies:
@@ -3445,17 +3438,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"plaiceholder@npm:^2.2.0":
-  version: 2.2.0
-  resolution: "plaiceholder@npm:2.2.0"
+"plaiceholder@npm:^2.3.0":
+  version: 2.3.0
+  resolution: "plaiceholder@npm:2.3.0"
   dependencies:
     blurhash: 1.1.4
     image-size: 1.0.0
     node-cache: 5.1.2
-    node-fetch: 2.6.2
+    node-fetch: 2.6.7
   peerDependencies:
     sharp: ">= 0.26.2"
-  checksum: 0a6bf76a93a416ef057d38a1b100673a377bac05633060fe37846e5ad71b56a993d4f5264ba45ad7bcf0b09046b74c796a4c0826feff66e7bf988cbee48f1067
+  checksum: d039f91d2c117dcd93343b7bcee780c62f9ba8fa4b74143e42c58629267f9297624c91166813fcc78e26a5424b8a373701a222b5b92fab331e378f26607a6b75
   languageName: node
   linkType: hard
 
