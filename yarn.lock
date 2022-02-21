@@ -591,10 +591,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^17.0.17":
-  version: 17.0.17
-  resolution: "@types/node@npm:17.0.17"
-  checksum: 8ddba2829acdf1684fbd8fd248ec13f033efb70ecd1085677b547c40ef8e936a006b95eac3bdc28c47939c62526f3f027afeb4a930e30e4394923bbae4626476
+"@types/node@npm:^17.0.18":
+  version: 17.0.18
+  resolution: "@types/node@npm:17.0.18"
+  checksum: 6c4edfc2b3ba2342a9c3d56e934c5245948ab752f4dc04bd6790b9603e6ebc53bc4f5befc3662e207f7dba2ddd17ccf657f915e319ea7cdd4f77b851079d1611
   languageName: node
   linkType: hard
 
@@ -937,16 +937,16 @@ __metadata:
     "@fortawesome/free-solid-svg-icons": ^6.0.0
     "@fortawesome/react-fontawesome": ^0.1.17
     "@trivago/prettier-plugin-sort-imports": ^3.2.0
-    "@types/node": ^17.0.17
+    "@types/node": ^17.0.18
     "@types/react": 17.0.39
     autoprefixer: ^10.4.2
     eslint: 8.8.0
     eslint-config-next: 12.0.10
-    eslint-config-prettier: ^8.3.0
+    eslint-config-prettier: ^8.4.0
     framer-motion: ^6.2.6
     microcms-js-sdk: ^2.0.0
     next: 12.1.0
-    next-sitemap: ^2.1.13
+    next-sitemap: ^2.4.3
     plaiceholder: ^2.3.0
     postcss: ^8.4.6
     prettier: ^2.5.1
@@ -955,7 +955,7 @@ __metadata:
     react-intersection-observer: ^8.33.1
     react-responsive-carousel: ^3.2.22
     sharp: ^0.30.1
-    tailwindcss: ^3.0.19
+    tailwindcss: ^3.0.23
     typescript: 4.5.5
   languageName: unknown
   linkType: soft
@@ -1663,14 +1663,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:^8.3.0":
-  version: 8.3.0
-  resolution: "eslint-config-prettier@npm:8.3.0"
+"eslint-config-prettier@npm:^8.4.0":
+  version: 8.4.0
+  resolution: "eslint-config-prettier@npm:8.4.0"
   peerDependencies:
     eslint: ">=7.0.0"
   bin:
     eslint-config-prettier: bin/cli.js
-  checksum: df4cea3032671995bb5ab07e016169072f7fa59f44a53251664d9ca60951b66cdc872683b5c6a3729c91497c11490ca44a79654b395dd6756beb0c3903a37196
+  checksum: ee8dc343f1fed15dc0658e190a966cc23644477f2331a7f56ae2bb79dd74892e3cde8ea5c142e7a3329a8291a1de041e13ca96e54d0c85ff4a2aba13390c5f10
   languageName: node
   linkType: hard
 
@@ -3028,9 +3028,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-sitemap@npm:^2.1.13":
-  version: 2.1.13
-  resolution: "next-sitemap@npm:2.1.13"
+"next-sitemap@npm:^2.4.3":
+  version: 2.4.3
+  resolution: "next-sitemap@npm:2.4.3"
   dependencies:
     "@corex/deepmerge": ^2.6.148
     minimist: ^1.2.5
@@ -3038,7 +3038,7 @@ __metadata:
     next: "*"
   bin:
     next-sitemap: bin/next-sitemap
-  checksum: e32c0d20a41ddbe40f716158ecc4b004dcc2b45b37928c88a03e735f5493331ddb34807cf0d369df6aeca881453e60e9ba90526ea4168a4444d28a9f8f77c000
+  checksum: 039733e7756492f6251fdcb103d03a636061ba5486dee07f4dc092e055f3b138d1f6e1fc5c5f3578ff7b7f3de2ff3bce8448e4e2125eb96873e9a874e280bbba
   languageName: node
   linkType: hard
 
@@ -4266,9 +4266,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:^3.0.19":
-  version: 3.0.19
-  resolution: "tailwindcss@npm:3.0.19"
+"tailwindcss@npm:^3.0.23":
+  version: 3.0.23
+  resolution: "tailwindcss@npm:3.0.23"
   dependencies:
     arg: ^5.0.1
     chalk: ^4.1.2
@@ -4283,6 +4283,7 @@ __metadata:
     is-glob: ^4.0.3
     normalize-path: ^3.0.0
     object-hash: ^2.2.0
+    postcss: ^8.4.6
     postcss-js: ^4.0.0
     postcss-load-config: ^3.1.0
     postcss-nested: 5.0.6
@@ -4296,7 +4297,7 @@ __metadata:
   bin:
     tailwind: lib/cli.js
     tailwindcss: lib/cli.js
-  checksum: dbaf8a0c5ee07ee6ab7f460b1068e1bcb230f1a67458be767519a8d248b94846e4903fb43849e49b045be1e7a4503b5921f6179db47ca733b7c37a3ed953c5fa
+  checksum: 2e7fdd11561e619770f656821c4b6850fdef633777c1f56fc815e566fc3fe6ec707df0966e90764ef9f452be0d0ee54daa0541002918eada590def3788a30f08
   languageName: node
   linkType: hard
 
