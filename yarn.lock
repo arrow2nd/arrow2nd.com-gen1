@@ -591,10 +591,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^17.0.18":
-  version: 17.0.18
-  resolution: "@types/node@npm:17.0.18"
-  checksum: 6c4edfc2b3ba2342a9c3d56e934c5245948ab752f4dc04bd6790b9603e6ebc53bc4f5befc3662e207f7dba2ddd17ccf657f915e319ea7cdd4f77b851079d1611
+"@types/node@npm:^17.0.21":
+  version: 17.0.21
+  resolution: "@types/node@npm:17.0.21"
+  checksum: 89dcd2fe82f21d3634266f8384e9c865cf8af49685639fbdbd799bdd1040480fb1e8eeda2d3b9fce41edbe704d2a4be9f427118c4ae872e8d9bb7cbeb3c41a94
   languageName: node
   linkType: hard
 
@@ -937,7 +937,7 @@ __metadata:
     "@fortawesome/free-solid-svg-icons": ^6.0.0
     "@fortawesome/react-fontawesome": ^0.1.17
     "@trivago/prettier-plugin-sort-imports": ^3.2.0
-    "@types/node": ^17.0.18
+    "@types/node": ^17.0.21
     "@types/react": 17.0.39
     autoprefixer: ^10.4.2
     eslint: 8.8.0
@@ -946,7 +946,7 @@ __metadata:
     framer-motion: ^6.2.8
     microcms-js-sdk: ^2.0.0
     next: 12.1.0
-    next-sitemap: ^2.4.3
+    next-sitemap: ^2.5.1
     plaiceholder: ^2.3.0
     postcss: ^8.4.6
     prettier: ^2.5.1
@@ -3028,9 +3028,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-sitemap@npm:^2.4.3":
-  version: 2.4.3
-  resolution: "next-sitemap@npm:2.4.3"
+"next-sitemap@npm:^2.5.1":
+  version: 2.5.1
+  resolution: "next-sitemap@npm:2.5.1"
   dependencies:
     "@corex/deepmerge": ^2.6.148
     minimist: ^1.2.5
@@ -3038,7 +3038,7 @@ __metadata:
     next: "*"
   bin:
     next-sitemap: bin/next-sitemap
-  checksum: 039733e7756492f6251fdcb103d03a636061ba5486dee07f4dc092e055f3b138d1f6e1fc5c5f3578ff7b7f3de2ff3bce8448e4e2125eb96873e9a874e280bbba
+  checksum: fb561ea91c910b4a15af17d140eaaea916959c1a8ee6df3b3aaab2fa7b0b26d2970b12c5fa9d0934cf852a1b171603711295dd89844c7f7376208138a8ff9a2f
   languageName: node
   linkType: hard
 
