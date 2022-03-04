@@ -953,7 +953,7 @@ __metadata:
     react: 17.0.2
     react-dom: 17.0.2
     react-intersection-observer: ^8.33.1
-    react-responsive-carousel: ^3.2.22
+    react-responsive-carousel: ^3.2.23
     sharp: ^0.30.2
     tailwindcss: ^3.0.23
     typescript: 4.5.5
@@ -3722,14 +3722,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-responsive-carousel@npm:^3.2.22":
-  version: 3.2.22
-  resolution: "react-responsive-carousel@npm:3.2.22"
+"react-responsive-carousel@npm:^3.2.23":
+  version: 3.2.23
+  resolution: "react-responsive-carousel@npm:3.2.23"
   dependencies:
     classnames: ^2.2.5
     prop-types: ^15.5.8
     react-easy-swipe: ^0.0.21
-  checksum: 6e6ef7a2c140494bb0186af292dd8327ecb8626a3e93fb188923881c760bc996ab84346370066913481d9a4e967555e3c6386046c2aadde69496d1f41ffd5096
+  checksum: 8a5b915f140a05425554a0c108c60a0b103dae49808486d39147df09c832ad712c7d7f4a66f0d0c39529ca095b4a327f0cc440d91b5f7a39ab13076931f74bd0
   languageName: node
   linkType: hard
 
