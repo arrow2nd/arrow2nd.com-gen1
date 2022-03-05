@@ -942,13 +942,13 @@ __metadata:
     autoprefixer: ^10.4.2
     eslint: 8.8.0
     eslint-config-next: 12.0.10
-    eslint-config-prettier: ^8.4.0
+    eslint-config-prettier: ^8.5.0
     framer-motion: ^6.2.8
     microcms-js-sdk: ^2.0.0
     next: 12.1.0
-    next-sitemap: ^2.5.1
+    next-sitemap: ^2.5.4
     plaiceholder: ^2.3.0
-    postcss: ^8.4.6
+    postcss: ^8.4.7
     prettier: ^2.5.1
     react: 17.0.2
     react-dom: 17.0.2
@@ -1670,14 +1670,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:^8.4.0":
-  version: 8.4.0
-  resolution: "eslint-config-prettier@npm:8.4.0"
+"eslint-config-prettier@npm:^8.5.0":
+  version: 8.5.0
+  resolution: "eslint-config-prettier@npm:8.5.0"
   peerDependencies:
     eslint: ">=7.0.0"
   bin:
     eslint-config-prettier: bin/cli.js
-  checksum: ee8dc343f1fed15dc0658e190a966cc23644477f2331a7f56ae2bb79dd74892e3cde8ea5c142e7a3329a8291a1de041e13ca96e54d0c85ff4a2aba13390c5f10
+  checksum: 0d0f5c32e7a0ad91249467ce71ca92394ccd343178277d318baf32063b79ea90216f4c81d1065d60f96366fdc60f151d4d68ae7811a58bd37228b84c2083f893
   languageName: node
   linkType: hard
 
@@ -3014,6 +3014,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"nanoid@npm:^3.3.1":
+  version: 3.3.1
+  resolution: "nanoid@npm:3.3.1"
+  bin:
+    nanoid: bin/nanoid.cjs
+  checksum: 4ef0969e1bbe866fc223eb32276cbccb0961900bfe79104fa5abe34361979dead8d0e061410a5c03bc3d47455685adf32c09d6f27790f4a6898fb51f7df7ec86
+  languageName: node
+  linkType: hard
+
 "napi-build-utils@npm:^1.0.1":
   version: 1.0.2
   resolution: "napi-build-utils@npm:1.0.2"
@@ -3035,9 +3044,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-sitemap@npm:^2.5.1":
-  version: 2.5.1
-  resolution: "next-sitemap@npm:2.5.1"
+"next-sitemap@npm:^2.5.4":
+  version: 2.5.4
+  resolution: "next-sitemap@npm:2.5.4"
   dependencies:
     "@corex/deepmerge": ^2.6.148
     minimist: ^1.2.5
@@ -3045,7 +3054,7 @@ __metadata:
     next: "*"
   bin:
     next-sitemap: bin/next-sitemap
-  checksum: fb561ea91c910b4a15af17d140eaaea916959c1a8ee6df3b3aaab2fa7b0b26d2970b12c5fa9d0934cf852a1b171603711295dd89844c7f7376208138a8ff9a2f
+  checksum: 60e1009a851171759711a1d68ba2819aa73f85471b193d2312f2b65f1dafd5f2671158f24245be2e79fc03eea976fb6225d7cb7b65a87a7b8831201d9dd08da3
   languageName: node
   linkType: hard
 
@@ -3544,6 +3553,17 @@ __metadata:
     picocolors: ^1.0.0
     source-map-js: ^1.0.2
   checksum: 60e7808f39c4a9d0fa067bfd5eb906168c4eb6d3ff0093f7d314d1979b001a16363deedccd368a7df869c63ad4ae350d27da439c94ff3fb0f8fc93d49fe38a90
+  languageName: node
+  linkType: hard
+
+"postcss@npm:^8.4.7":
+  version: 8.4.7
+  resolution: "postcss@npm:8.4.7"
+  dependencies:
+    nanoid: ^3.3.1
+    picocolors: ^1.0.0
+    source-map-js: ^1.0.2
+  checksum: a515ed36622edbee1d3ba153298d3b62ae9826dfa6de19204c2a6f975c8d3ad36808423b5119a9d82b78efd486de3ce35a1faf882a36ac8aa09492be4fbb7fe1
   languageName: node
   linkType: hard
 
