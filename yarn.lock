@@ -946,9 +946,9 @@ __metadata:
     framer-motion: ^6.2.8
     microcms-js-sdk: ^2.0.0
     next: 12.1.0
-    next-sitemap: ^2.5.4
+    next-sitemap: ^2.5.7
     plaiceholder: ^2.3.0
-    postcss: ^8.4.7
+    postcss: ^8.4.8
     prettier: ^2.5.1
     react: 17.0.2
     react-dom: 17.0.2
@@ -3044,9 +3044,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-sitemap@npm:^2.5.4":
-  version: 2.5.4
-  resolution: "next-sitemap@npm:2.5.4"
+"next-sitemap@npm:^2.5.7":
+  version: 2.5.7
+  resolution: "next-sitemap@npm:2.5.7"
   dependencies:
     "@corex/deepmerge": ^2.6.148
     minimist: ^1.2.5
@@ -3054,7 +3054,7 @@ __metadata:
     next: "*"
   bin:
     next-sitemap: bin/next-sitemap
-  checksum: 60e1009a851171759711a1d68ba2819aa73f85471b193d2312f2b65f1dafd5f2671158f24245be2e79fc03eea976fb6225d7cb7b65a87a7b8831201d9dd08da3
+  checksum: 9311f4d094f4063b1c8f259ad3c4ce3f3c4fccfe85d8756140a319a2f44e67ca1c1907ce206c89173dbff7875f5d1a003372ea415ab64d2165a57a6e43d98e3c
   languageName: node
   linkType: hard
 
@@ -3556,14 +3556,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.4.7":
-  version: 8.4.7
-  resolution: "postcss@npm:8.4.7"
+"postcss@npm:^8.4.8":
+  version: 8.4.8
+  resolution: "postcss@npm:8.4.8"
   dependencies:
     nanoid: ^3.3.1
     picocolors: ^1.0.0
     source-map-js: ^1.0.2
-  checksum: a515ed36622edbee1d3ba153298d3b62ae9826dfa6de19204c2a6f975c8d3ad36808423b5119a9d82b78efd486de3ce35a1faf882a36ac8aa09492be4fbb7fe1
+  checksum: 8e42def1ea98a4ac800d2b8937b19c83c6722da6c39ded72b1877eb743922f51b6e93be3667284b685ac18e8b583f21d97f24e0a73161c70fe8dc6901e614b87
   languageName: node
   linkType: hard
 
