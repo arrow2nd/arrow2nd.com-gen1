@@ -24,7 +24,7 @@
     "react-dom": "17.0.2",
     "react-intersection-observer": "^8.33.1",
     "react-responsive-carousel": "^3.2.23",
-    "sharp": "^0.30.2"
+    "sharp": "^0.30.3"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^3.2.0",
