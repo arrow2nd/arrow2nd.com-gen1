@@ -349,12 +349,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fortawesome/fontawesome-svg-core@npm:^6.1.0":
-  version: 6.1.0
-  resolution: "@fortawesome/fontawesome-svg-core@npm:6.1.0"
+"@fortawesome/fontawesome-common-types@npm:6.1.1":
+  version: 6.1.1
+  resolution: "@fortawesome/fontawesome-common-types@npm:6.1.1"
+  checksum: 4db285557dd9d178e313a9596ad1c4ba84e9d47efb53dea3206de1bf98252574e0d95c3a0b114cc3cb5f162e2622a2cf8f037011fc98818ccade7bfb6c0c335b
+  languageName: node
+  linkType: hard
+
+"@fortawesome/fontawesome-svg-core@npm:^6.1.1":
+  version: 6.1.1
+  resolution: "@fortawesome/fontawesome-svg-core@npm:6.1.1"
   dependencies:
-    "@fortawesome/fontawesome-common-types": 6.1.0
-  checksum: cc901fb1ee6eed391a1771dcb565e9176892ce5b7c19bf172b5761936e70d581ef253caf5b99da0c34c8b7dc9a6e481ee6b4365a3796cf2ebffc82acf0f7e275
+    "@fortawesome/fontawesome-common-types": 6.1.1
+  checksum: bf3b09a1ec3c5d6be30ea04c83dffb921c5a457c547fb1b99b814591489efabf939f669878cc5b48deb9771ef705209a1bb1b3088e66f6873cc9b34cbf4c781c
   languageName: node
   linkType: hard
 
@@ -932,7 +939,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "arrow2nd.com@workspace:."
   dependencies:
-    "@fortawesome/fontawesome-svg-core": ^6.1.0
+    "@fortawesome/fontawesome-svg-core": ^6.1.1
     "@fortawesome/free-brands-svg-icons": ^6.1.0
     "@fortawesome/free-solid-svg-icons": ^6.1.0
     "@fortawesome/react-fontawesome": ^0.1.18
