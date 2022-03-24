@@ -342,13 +342,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fortawesome/fontawesome-common-types@npm:6.1.0":
-  version: 6.1.0
-  resolution: "@fortawesome/fontawesome-common-types@npm:6.1.0"
-  checksum: 09c6b6ff0b24b1950cf44e821f25ccc9cedcce97e7c969c0fbb4410cccdc0742ea44931d4240648eb2080360bb0fdb470c42d3d429d453d31810fd65f056e03c
-  languageName: node
-  linkType: hard
-
 "@fortawesome/fontawesome-common-types@npm:6.1.1":
   version: 6.1.1
   resolution: "@fortawesome/fontawesome-common-types@npm:6.1.1"
@@ -365,21 +358,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fortawesome/free-brands-svg-icons@npm:^6.1.0":
-  version: 6.1.0
-  resolution: "@fortawesome/free-brands-svg-icons@npm:6.1.0"
+"@fortawesome/free-brands-svg-icons@npm:^6.1.1":
+  version: 6.1.1
+  resolution: "@fortawesome/free-brands-svg-icons@npm:6.1.1"
   dependencies:
-    "@fortawesome/fontawesome-common-types": 6.1.0
-  checksum: bb93c53716241d0d01359967b1c5fd21175cefc699cf3e2a607b4f4b236b441d1673f31ead11fbee41bf999921787c682c263620ff612591337efcaed895f57a
+    "@fortawesome/fontawesome-common-types": 6.1.1
+  checksum: a878cc764ec74f1d0fe8cf8e6c4e7dd4bf829f614b741a39416b155adb23c37e70f7e077d76b301a269a7f7b28cdcc3af9191460986aa470b31c40d04ee7d59d
   languageName: node
   linkType: hard
 
-"@fortawesome/free-solid-svg-icons@npm:^6.1.0":
-  version: 6.1.0
-  resolution: "@fortawesome/free-solid-svg-icons@npm:6.1.0"
+"@fortawesome/free-solid-svg-icons@npm:^6.1.1":
+  version: 6.1.1
+  resolution: "@fortawesome/free-solid-svg-icons@npm:6.1.1"
   dependencies:
-    "@fortawesome/fontawesome-common-types": 6.1.0
-  checksum: 41f762459d95388c1fdbd205493ff3750df8d3f6f937b1a51aaadaa62abbd563953168c04c9eb8a3628cec96271e2941be9ba5e214cc770e44dd0700f5649299
+    "@fortawesome/fontawesome-common-types": 6.1.1
+  checksum: 9c42f45af9e75410d9e20a110c4262ded1a778887dc3b1200c0576f6b226e6a5568fb85a862090b45b06060f878798ddde60b987ef56aafccbaa1e7a378dd17c
   languageName: node
   linkType: hard
 
@@ -940,8 +933,8 @@ __metadata:
   resolution: "arrow2nd.com@workspace:."
   dependencies:
     "@fortawesome/fontawesome-svg-core": ^6.1.1
-    "@fortawesome/free-brands-svg-icons": ^6.1.0
-    "@fortawesome/free-solid-svg-icons": ^6.1.0
+    "@fortawesome/free-brands-svg-icons": ^6.1.1
+    "@fortawesome/free-solid-svg-icons": ^6.1.1
     "@fortawesome/react-fontawesome": ^0.1.18
     "@trivago/prettier-plugin-sort-imports": ^3.2.0
     "@types/node": ^17.0.21
