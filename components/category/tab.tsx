@@ -1,4 +1,7 @@
+import { motion } from 'framer-motion'
 import Link from 'next/link'
+
+import { linkAnim } from 'animations/variants'
 
 import type { CategoryContent } from 'types/cms/category'
 
@@ -7,25 +10,23 @@ type Props = {
   categories: CategoryContent[]
 }
 
-const Tab = ({ current, categories }: Props): JSX.Element => {
-  const buttons = categories.map(({ name }) => {
-    const textStyle =
-      name === current
-        ? 'text-natural-white bg-natural-black'
-        : 'text-natural-black hover:text-natural-white'
-
-    return (
+const Tab = ({ current, categories }: Props): JSX.Element => (
+  <div className="mt-10 flex flex-wrap">
+    {categories.map(({ name }) => (
       <Link href={`/category/${name}`} key={name} passHref>
-        <a
-          className={`inline-block m-2 md:m-1 px-5 py-1 hover:bg-natural-black rounded-full tracking-widest transition-colors ${textStyle}`}
+        <motion.a
+          className={`flex-none inline-block mt-2 mr-2 md:mr-4 px-6 py-1 ${
+            current === name
+              ? 'text-white bg-main'
+              : 'text-main border-2 border-main'
+          } rounded-xl tracking-widest`}
+          {...linkAnim}
         >
           {name}
-        </a>
+        </motion.a>
       </Link>
-    )
-  })
-
-  return <div className="mt-12 md:mt-16 text-center">{buttons}</div>
-}
+    ))}
+  </div>
+)
 
 export default Tab
