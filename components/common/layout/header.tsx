@@ -2,10 +2,10 @@ import Link from 'next/link'
 
 import Arrow2nd from 'components/common/arrow2nd'
 
-import { PageLinks } from 'data/page-links'
+import { pageLinks } from 'data/pages'
 
 const Header = (): JSX.Element => {
-  const pageLinks = PageLinks.map(({ href, name }) => (
+  const links = pageLinks.map(({ href, name }) => (
     <Link href={href} key={name} passHref>
       <a className="ml-6 tracking-widest text-natural-gray hover:text-arrow2nd transition-colors">
         {name}
@@ -20,7 +20,7 @@ const Header = (): JSX.Element => {
           <Arrow2nd className="bg-white" size={42} />
         </a>
       </Link>
-      <div className="ml-auto">{pageLinks}</div>
+      <div className="ml-auto">{links}</div>
     </nav>
   )
 }

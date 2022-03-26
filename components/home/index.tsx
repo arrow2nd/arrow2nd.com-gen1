@@ -1,19 +1,28 @@
-import Accounts from 'components/common/accounts'
-import Arrow2nd from 'components/common/arrow2nd'
+import { motion } from 'framer-motion'
+import Image from 'next/image'
+
+import { pageTransitionAnim } from 'animations/variants'
+
+import Dots from 'components/common/accent/dots'
 import SEO from 'components/common/seo'
+
+import neko from 'public/neko.png'
 
 import Links from './links'
 
 const Home = (): JSX.Element => (
-  <div className="flex flex-col h-screen justify-center items-center animate-fadeIn">
+  <motion.div
+    className="flex flex-col h-screen justify-center items-center"
+    {...pageTransitionAnim}
+  >
     <SEO />
-    <Arrow2nd />
-    <span className="mt-6 text-3xl text-natural-black tracking-super">
+    <Image src={neko} alt="neko" width={192} height={110} placeholder="blur" />
+    <span className="mt-2 font-medium text-3xl text-main tracking-0.4">
       arrow2nd
     </span>
-    <Accounts className="mt-6" />
-    <Links className="mt-6" />
-  </div>
+    <Dots className="mt-8" count={4} />
+    <Links className="mt-8" />
+  </motion.div>
 )
 
 export default Home

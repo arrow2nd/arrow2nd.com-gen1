@@ -1,25 +1,28 @@
+import { HTMLMotionProps, motion } from 'framer-motion'
 import Link from 'next/link'
 
-import { PageLinks } from 'data/page-links'
+import { pageLinks } from 'data/pages'
 
 type Props = {
   className: string
 }
 
 const Links = ({ className }: Props): JSX.Element => {
-  const pageLinks = PageLinks.map(({ name, href }) => (
-    <Link key={name} href={href} passHref>
-      <a className="mx-4 hover:text-natural-black tracking-widest transition-colors">
-        {name}
-      </a>
-    </Link>
-  ))
+  const hoverAnim: HTMLMotionProps<'a'> = {
+    whileHover: { scale: 1.2, fontWeight: 500 },
+    whileTap: { scale: 0.9 },
+    transition: { duration: 0.125, ease: 'easeOut' }
+  }
 
   return (
-    <div
-      className={`px-4 py-2 bg-blue-gray text-natural-gray rounded-full shadow-md ${className}`}
-    >
-      {pageLinks}
+    <div className={`space-y-3 text-xl text-main tracking-0.2 ${className}`}>
+      {pageLinks.map(({ name, href }) => (
+        <Link key={name} href={href} passHref>
+          <motion.a className="block" {...hoverAnim}>
+            {name}
+          </motion.a>
+        </Link>
+      ))}
     </div>
   )
 }

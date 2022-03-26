@@ -1,3 +1,12 @@
+import { HTMLMotionProps } from 'framer-motion'
+
+/** ページ遷移アニメーション */
+export const pageTransitionAnim: HTMLMotionProps<'div'> = {
+  initial: { opacity: 0 },
+  animate: { opacity: 1 },
+  exit: { opacity: 0 }
+}
+
 export const fadeInPopup = {
   hidden: {
     opacity: 0
