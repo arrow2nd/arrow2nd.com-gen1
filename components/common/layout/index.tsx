@@ -10,9 +10,14 @@ type Props = {
 }
 
 const Layout = ({ children }: Props): JSX.Element => (
-  <motion.div className="flex flex-col min-h-screen" {...pageTransitionAnim}>
+  <motion.div
+    className="flex flex-col items-center min-h-screen"
+    {...pageTransitionAnim}
+  >
     <Header />
-    <main className="flex-1 mt-16">{children}</main>
+    <main className="flex-1 w-full max-w-screen-lg px-10 py-12">
+      {children}
+    </main>
     <Footer />
   </motion.div>
 )

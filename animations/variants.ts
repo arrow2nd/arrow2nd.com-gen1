@@ -1,4 +1,4 @@
-import { HTMLMotionProps } from 'framer-motion'
+import { HTMLMotionProps, Variants } from 'framer-motion'
 
 /** ページ遷移アニメーション */
 export const pageTransitionAnim: HTMLMotionProps<'div'> = {
@@ -14,7 +14,8 @@ export const linkAnim: HTMLMotionProps<'a'> = {
   transition: { duration: 0.1, ease: 'circOut' }
 }
 
-export const fadeInPopup = {
+/** フェードインでポップアップ */
+export const fadeInPopup: Variants = {
   hidden: {
     opacity: 0
   },

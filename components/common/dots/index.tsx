@@ -1,16 +1,23 @@
 type Props = {
   className?: string
   count: number
+  dashed?: boolean
 }
 
-const Dots = ({ className = '', count }: Props): JSX.Element => {
+const Dots = ({
+  className = '',
+  count,
+  dashed = false
+}: Props): JSX.Element => {
   const dots = []
 
   for (let i = 0; i < count; i++) {
     dots.push(
       <span
         key={`dot-${i}`}
-        className="inline-block w-2 h-2 bg-sea rounded-full"
+        className={`inline-block ${
+          i == 0 && dashed ? 'w-12' : 'w-2'
+        } h-2 bg-sea rounded-full`}
       />
     )
   }

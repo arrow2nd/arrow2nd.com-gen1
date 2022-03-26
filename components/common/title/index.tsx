@@ -1,15 +1,13 @@
-import Accent from 'components/common/accent'
+import Dots from '../dots'
 
 type Props = {
   text: string
 }
 
 const Title = ({ text }: Props): JSX.Element => (
-  <div className="text-center">
-    <h1 className="block text-natural-black text-5xl tracking-widest">
-      {text}
-    </h1>
-    <Accent className="mt-4" />
+  <div className="text-black">
+    <h1 className="block text-6xl tracking-widest">{text}</h1>
+    <Dots className="mt-6" count={4} dashed />
   </div>
 )
 

@@ -3,15 +3,16 @@ import type { SectionContent } from 'types/cms/section'
 import Section from './section'
 
 type Props = {
+  className?: string
   contents: SectionContent[]
 }
 
-const Sections = ({ contents }: Props): JSX.Element => {
-  const sections = contents.map((item) => (
-    <Section key={item.title} {...item} />
-  ))
-
-  return <div className="text-center">{sections}</div>
-}
+const Sections = ({ className = '', contents }: Props): JSX.Element => (
+  <div className={`space-y-16 text-left md:text-center ${className}`}>
+    {contents.map((item) => (
+      <Section key={item.title} {...item} />
+    ))}
+  </div>
+)
 
 export default Sections

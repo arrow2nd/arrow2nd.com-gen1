@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 import { pageTransitionAnim } from 'animations/variants'
 
-import Dots from 'components/common/accent/dots'
+import Dots from 'components/common/dots'
 import SEO from 'components/common/seo'
 
 import neko from 'public/neko.png'

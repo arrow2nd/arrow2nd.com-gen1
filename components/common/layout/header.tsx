@@ -7,7 +7,7 @@ import { linkAnim } from 'animations/variants'
 import { pageLinks } from 'data/pages'
 
 const Header = (): JSX.Element => (
-  <div className="p-12 flex flex-row w-full items-center text-main">
+  <div className="px-10 py-12 flex flex-row w-full items-center text-main">
     <Link href="/" passHref>
       <motion.a className="inline-block text-2xl" {...linkAnim}>
         <RiHome5Line />
