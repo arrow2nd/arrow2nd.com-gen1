@@ -9,9 +9,9 @@ export const pageTransitionAnim: HTMLMotionProps<'div'> = {
 
 /** リンクのホバー＆クリックアニメーション */
 export const linkAnim: HTMLMotionProps<'a'> = {
-  whileHover: { scale: 1.2, fontWeight: 500 },
+  whileHover: { scale: 1.2 },
   whileTap: { scale: 0.9 },
-  transition: { duration: 0.125, ease: 'easeOut' }
+  transition: { duration: 0.1, ease: 'circOut' }
 }
 
 export const fadeInPopup = {

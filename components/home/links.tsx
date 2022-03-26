@@ -10,7 +10,7 @@ type Props = {
 }
 
 const Links = ({ className }: Props): JSX.Element => (
-  <div className={`space-y-3 text-xl text-main tracking-0.2 ${className}`}>
+  <div className={`space-y-4 text-xl text-main tracking-0.2 ${className}`}>
     {pageLinks.map(({ name, href }) => (
       <Link key={name} href={href} passHref>
         <motion.a className="block" {...linkAnim}>

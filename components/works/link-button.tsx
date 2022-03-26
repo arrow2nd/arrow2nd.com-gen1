@@ -4,7 +4,7 @@ import { useInView } from 'react-intersection-observer'
 
 import { fadeInUp } from 'animations/variants'
 
-import FaIcon from 'components/common/fa-icon'
+import Icon from 'components/common/icon'
 
 import type { LinkContent } from 'types/cms/work'
 
@@ -29,7 +29,7 @@ const LinkButton = ({ icon, text, href }: LinkContent): JSX.Element => {
       animate={controls}
       variants={fadeInUp}
     >
-      <FaIcon name={icon[0]} />
+      <Icon name={icon[0]} />
       <span className="inline-block ml-1.5">{text}</span>
     </motion.a>
   )

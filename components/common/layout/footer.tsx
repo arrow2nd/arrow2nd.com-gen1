@@ -1,11 +1,9 @@
 import Accounts from 'components/common/accounts'
 
 const Footer = (): JSX.Element => (
-  <div className="flex flex-col mt-16 mb-8 text-center items-center">
+  <div className="p-20 flex flex-col items-center space-y-6 text-black">
     <Accounts />
-    <p className="mt-6 text-sm text-natural-black">
-      © {new Date().getFullYear()} arrow2nd
-    </p>
+    <p className="text-base">© {new Date().getFullYear()} arrow2nd</p>
   </div>
 )
 
