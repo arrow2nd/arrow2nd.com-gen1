@@ -1,27 +1,29 @@
+import { motion } from 'framer-motion'
 import Link from 'next/link'
+import { FiHome } from 'react-icons/fi'
 
-import Arrow2nd from 'components/common/arrow2nd'
+import { linkAnim } from 'animations/variants'
 
 import { pageLinks } from 'data/pages'
 
 const Header = (): JSX.Element => {
   const links = pageLinks.map(({ href, name }) => (
-    <Link href={href} key={name} passHref>
-      <a className="ml-6 tracking-widest text-natural-gray hover:text-arrow2nd transition-colors">
+    <Link key={name} href={href} passHref>
+      <motion.a className="inline-block tracking-widest" {...linkAnim}>
         {name}
-      </a>
+      </motion.a>
     </Link>
   ))
 
   return (
-    <nav className="flex flex-row w-full items-center">
+    <div className="p-8 flex flex-row w-full items-center text-main">
       <Link href="/" passHref>
-        <a className="inline-flex rounded-full border border-gray-300">
-          <Arrow2nd className="bg-white" size={42} />
-        </a>
+        <motion.a className="inline-block text-2xl" {...linkAnim}>
+          <FiHome />
+        </motion.a>
       </Link>
-      <div className="ml-auto">{links}</div>
-    </nav>
+      <div className="ml-auto space-x-6">{links}</div>
+    </div>
   )
 }
 

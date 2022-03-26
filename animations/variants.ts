@@ -7,6 +7,13 @@ export const pageTransitionAnim: HTMLMotionProps<'div'> = {
   exit: { opacity: 0 }
 }
 
+/** リンクのホバー＆クリックアニメーション */
+export const linkAnim: HTMLMotionProps<'a'> = {
+  whileHover: { scale: 1.2, fontWeight: 500 },
+  whileTap: { scale: 0.9 },
+  transition: { duration: 0.125, ease: 'easeOut' }
+}
+
 export const fadeInPopup = {
   hidden: {
     opacity: 0

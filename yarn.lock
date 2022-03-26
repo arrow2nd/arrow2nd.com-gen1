@@ -959,6 +959,7 @@ __metadata:
     prettier: ^2.6.1
     react: 17.0.2
     react-dom: 17.0.2
+    react-icons: ^4.3.1
     react-intersection-observer: ^8.33.1
     react-responsive-carousel: ^3.2.23
     sharp: ^0.30.3
@@ -3788,6 +3789,15 @@ __metadata:
   dependencies:
     prop-types: ^15.5.8
   checksum: 225f12a9dd410db1c790220867ab1eb58e2ef0a2bdae8541330805fc5b9905e242ab307b019f9aaed76473849a753f363baff03fa8a77e7a1860d7b41dc83ec0
+  languageName: node
+  linkType: hard
+
+"react-icons@npm:^4.3.1":
+  version: 4.3.1
+  resolution: "react-icons@npm:4.3.1"
+  peerDependencies:
+    react: "*"
+  checksum: 2cc608acdd3e906aa3aaee290b8398220639677c949382d86e554020e5dab6a9f1ed7484418aa5272cb5c5c018e1fc9a323d433d901697a76530029f9ecb1263
   languageName: node
   linkType: hard
 
