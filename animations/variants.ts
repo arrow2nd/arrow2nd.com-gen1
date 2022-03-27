@@ -9,7 +9,7 @@ export const pageTransition: HTMLMotionProps<'div'> = {
 
 /** リンクのホバー＆クリックアニメーション */
 export const hoverLink: HTMLMotionProps<'a'> = {
-  whileHover: { scale: 1.2 },
+  whileHover: { scale: 1.12 },
   whileTap: { scale: 0.9 },
   transition: { duration: 0.3, ease: 'circOut' }
 }

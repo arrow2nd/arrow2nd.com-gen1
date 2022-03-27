@@ -7,12 +7,24 @@ type Props = {
   contents: SectionContent[]
 }
 
-const Sections = ({ className = '', contents }: Props): JSX.Element => (
-  <div className={`space-y-12 text-left ${className}`}>
-    {contents.map((item) => (
-      <Section key={item.title} {...item} />
-    ))}
-  </div>
-)
+const Sections = ({ className = '', contents }: Props): JSX.Element => {
+  const textSections = contents.map(({ title, text }) => {
+    const lines = text.split('\n')
+
+    return (
+      <Section key={title} title={title}>
+        <div className="mt-2 text-sm md:text-base font-normal">
+          {lines.map((line) => (
+            <p key={line}>{line}</p>
+          ))}
+        </div>
+      </Section>
+    )
+  })
+
+  return (
+    <div className={`space-y-12 text-left ${className}`}>{textSections}</div>
+  )
+}
 
 export default Sections

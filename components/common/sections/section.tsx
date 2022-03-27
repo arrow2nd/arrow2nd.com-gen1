@@ -5,11 +5,12 @@ import { useInView } from 'react-intersection-observer'
 import { fadeInUp } from 'animations/variants'
 
 type Props = {
+  className?: string
   title: string
-  text: string
+  children: React.ReactNode
 }
 
-const Section = ({ title, text }: Props): JSX.Element => {
+const Section = ({ className = '', title, children }: Props): JSX.Element => {
   const controls = useAnimation()
   const { ref, inView } = useInView({
     threshold: 0.25,
@@ -26,12 +27,14 @@ const Section = ({ title, text }: Props): JSX.Element => {
     variants: fadeInUp
   }
 
-  const lines = text.split('\n').map((line) => <p key={line}>{line}</p>)
-
   return (
-    <motion.div className="text-main tracking-wide " ref={ref} {...commonAnim}>
+    <motion.div
+      className={`text-main tracking-wide ${className}`}
+      ref={ref}
+      {...commonAnim}
+    >
       <h3 className="block text-2xl">{title}</h3>
-      <div className="mt-2 text-sm md:text-base font-normal">{lines}</div>
+      {children}
     </motion.div>
   )
 }
