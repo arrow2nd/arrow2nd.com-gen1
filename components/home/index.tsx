@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 
-import { pageTransitionAnim } from 'animations/variants'
+import { pageTransition } from 'animations/variants'
 
 import Dots from 'components/common/dots'
 import SEO from 'components/common/seo'
@@ -13,7 +13,7 @@ import Links from './links'
 const Home = (): JSX.Element => (
   <motion.div
     className="flex flex-col h-screen justify-center items-center font-medium"
-    {...pageTransitionAnim}
+    {...pageTransition}
   >
     <SEO />
     <Image src={neko} alt="neko" width={192} height={110} placeholder="blur" />

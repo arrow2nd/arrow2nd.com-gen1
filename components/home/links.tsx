@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 
-import { linkAnim } from 'animations/variants'
+import { hoverLink } from 'animations/variants'
 
 import { pageLinks } from 'data/pages'
 
@@ -13,7 +13,7 @@ const Links = ({ className }: Props): JSX.Element => (
   <div className={`space-y-4 text-xl text-main tracking-0.2 ${className}`}>
     {pageLinks.map(({ name, href }) => (
       <Link key={name} href={href} passHref>
-        <motion.a className="block" {...linkAnim}>
+        <motion.a className="block" {...hoverLink}>
           {name}
         </motion.a>
       </Link>

@@ -1,17 +1,24 @@
 import { HTMLMotionProps, Variants } from 'framer-motion'
 
-/** ページ遷移アニメーション */
-export const pageTransitionAnim: HTMLMotionProps<'div'> = {
+/** ページの遷移アニメーション */
+export const pageTransition: HTMLMotionProps<'div'> = {
   initial: { opacity: 0 },
   animate: { opacity: 1 },
   exit: { opacity: 0 }
 }
 
 /** リンクのホバー＆クリックアニメーション */
-export const linkAnim: HTMLMotionProps<'a'> = {
+export const hoverLink: HTMLMotionProps<'a'> = {
   whileHover: { scale: 1.2 },
   whileTap: { scale: 0.9 },
-  transition: { duration: 0.1, ease: 'circOut' }
+  transition: { duration: 0.3, ease: 'circOut' }
+}
+
+/** カードのホバー＆クリックアニメーション */
+export const hoverCard: HTMLMotionProps<'div'> = {
+  whileHover: { scale: 1.1, filter: 'brightness(0.75)' },
+  whileTap: { scale: 0.9 },
+  transition: { duration: 0.3, ease: 'easeInOut' }
 }
 
 /** フェードインでポップアップ */
@@ -29,7 +36,8 @@ export const fadeInPopup: Variants = {
   }
 }
 
-export const fadeInUp = {
+/** フェードインで表示 */
+export const fadeInUp: Variants = {
   hidden: {
     opacity: 0,
     y: 20
@@ -41,14 +49,5 @@ export const fadeInUp = {
       duration: 0.6,
       ease: 'easeInOut'
     }
-  }
-}
-
-export const hover = {
-  scale: 1.1,
-  filter: 'brightness(0.75)',
-  transition: {
-    duration: 0.3,
-    ease: 'easeInOut'
   }
 }

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 
-import { linkAnim } from 'animations/variants'
+import { hoverLink } from 'animations/variants'
 
 import type { CategoryContent } from 'types/cms/category'
 
@@ -20,7 +20,7 @@ const Tab = ({ current, categories }: Props): JSX.Element => (
               ? 'text-white bg-main'
               : 'text-main border-2 border-main'
           } rounded-xl tracking-widest`}
-          {...linkAnim}
+          {...hoverLink}
         >
           {name}
         </motion.a>

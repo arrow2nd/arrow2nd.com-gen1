@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 
-import { linkAnim } from 'animations/variants'
+import { hoverLink } from 'animations/variants'
 
 import Icon from 'components/common/icon'
 
@@ -18,7 +18,7 @@ const Accounts = ({ className = '' }: Props): JSX.Element => (
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        {...linkAnim}
+        {...hoverLink}
       >
         <Icon name={icon} />
       </motion.a>
