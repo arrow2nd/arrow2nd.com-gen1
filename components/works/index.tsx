@@ -15,12 +15,12 @@ type Props = {
 }
 
 const Works = ({ contents, images }: Props): JSX.Element => {
-  const { title, description, sections, links } = contents
+  const { category, title, description, sections, links } = contents
   const imageUrl = contents.images[0].image.url
 
   return (
-    <Layout disablePaddingX>
-      <SEO title={title} desc={description} imageUrl={imageUrl} />
+    <Layout backPagePath={`/category/${category.name}`} disablePaddingX>
+      <SEO title={title} desc={description} imageUrl={imageUrl} article />
       <Carousel images={images} />
       <div className="px-10">
         <Title text={title} description={description} />

@@ -7,15 +7,20 @@ import Header from './header'
 
 type Props = {
   children: React.ReactNode
+  backPagePath?: string
   disablePaddingX?: boolean
 }
 
-const Layout = ({ children, disablePaddingX = false }: Props): JSX.Element => (
+const Layout = ({
+  children,
+  backPagePath = '',
+  disablePaddingX = false
+}: Props): JSX.Element => (
   <motion.div
     className="flex flex-col items-center min-h-screen"
     {...pageTransition}
   >
-    <Header />
+    <Header backPagePath={backPagePath} />
     <main
       className={`flex-1 w-full max-w-screen-lg ${
         disablePaddingX || 'px-10'
