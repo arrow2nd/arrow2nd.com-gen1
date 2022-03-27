@@ -19,11 +19,10 @@ const Works = ({ contents, images }: Props): JSX.Element => {
   const imageUrl = contents.images[0].image.url
 
   return (
-    <Layout>
+    <Layout disablePaddingX>
       <SEO title={title} desc={description} imageUrl={imageUrl} />
-
-      <div className="mx-auto max-w-3xl">
-        <Carousel images={images} />
+      <Carousel images={images} />
+      <div className="px-10">
         <Title text={title} description={description} />
         <Sections className="mt-10" contents={sections} />
         <LinkSection items={links} />
