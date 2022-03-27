@@ -8,6 +8,7 @@ const Notfound = (): JSX.Element => (
     <SEO title="404 Not Found" />
     <Title text="Opps!" />
     <Sections
+      className="mt-12"
       contents={[
         {
           title: '404 Not Found',
