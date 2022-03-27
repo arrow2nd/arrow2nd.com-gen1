@@ -5,7 +5,7 @@ type Props = {
 }
 
 const Title = ({ text }: Props): JSX.Element => (
-  <div className="text-black">
+  <div className="text-main">
     <h1 className="block text-6xl tracking-widest">{text}</h1>
     <Dots className="mt-8" count={4} dashed />
   </div>

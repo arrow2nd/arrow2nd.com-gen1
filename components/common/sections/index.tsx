@@ -8,7 +8,7 @@ type Props = {
 }
 
 const Sections = ({ className = '', contents }: Props): JSX.Element => (
-  <div className={`space-y-16 text-left md:text-center ${className}`}>
+  <div className={`space-y-12 text-left ${className}`}>
     {contents.map((item) => (
       <Section key={item.title} {...item} />
     ))}

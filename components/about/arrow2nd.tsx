@@ -7,7 +7,7 @@ import arrow2nd from 'public/arrow2nd.png'
 
 const Arrow2nd = (): JSX.Element => (
   <motion.div
-    className="flex mt-16 justify-center"
+    className="flex justify-center w-full mt-16 md:pt-12 md:bg-white md:border-2 md:rounded-lg"
     initial="hidden"
     animate="visible"
     variants={fadeInPopup}
