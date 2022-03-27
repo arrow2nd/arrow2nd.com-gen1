@@ -25,7 +25,7 @@ library.add(
 
 const MyApp = ({ Component, pageProps, router }: AppProps) => (
   <AnimatePresence exitBeforeEnter onExitComplete={() => window.scrollTo(0, 0)}>
-    <Component key={router.route} {...pageProps} />
+    <Component key={router.asPath} {...pageProps} />
   </AnimatePresence>
 )
 
