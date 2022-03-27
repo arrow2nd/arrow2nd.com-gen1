@@ -30,7 +30,7 @@ const Card = ({ id, title, description, thumbnail }: Props): JSX.Element => {
   const { imageProps, alt } = thumbnail
 
   return (
-    <Link href={href} passHref>
+    <Link href={href} scroll={false} passHref>
       <motion.a
         className="block"
         ref={ref}

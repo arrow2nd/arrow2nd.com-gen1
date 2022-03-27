@@ -16,7 +16,7 @@ const Header = (): JSX.Element => (
 
     <div className="ml-auto space-x-6 text-lg">
       {pageLinks.map(({ href, name }) => (
-        <Link key={name} href={href} passHref>
+        <Link key={name} href={href} scroll={false} passHref>
           <motion.a className="inline-block tracking-widest" {...hoverLink}>
             {name}
           </motion.a>
