@@ -18,6 +18,7 @@ import type { DynamicImage } from 'types/image'
 type Props = InferGetStaticPropsType<typeof getStaticProps>
 
 const CategoryPage: NextPage<Props> = (props: Props) => <Category {...props} />
+
 export default CategoryPage
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -30,7 +31,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps = async (context: GetStaticPropsContext) => {
   const { params } = context
 
-  // 選択されているカテゴリ
+  // 指定されたカテゴリを取得
   const currentCategory = params?.name && toStringId(params.name)
   if (!currentCategory) {
     throw new Error('[ Error ] category name not found')
@@ -41,7 +42,7 @@ export const getStaticProps = async (context: GetStaticPropsContext) => {
     endpoint: 'category'
   })
 
-  // カテゴリIDを取得
+  // 作品のカテゴリIDを取得
   const categoryId = categories.contents.find(
     (e) => e.name === currentCategory
   )?.id

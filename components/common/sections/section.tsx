@@ -21,17 +21,13 @@ const Section = ({ className = '', title, children }: Props): JSX.Element => {
     controls.start(inView ? 'visible' : 'hidden')
   }, [controls, inView])
 
-  const commonAnim = {
-    initial: 'hidden',
-    animate: controls,
-    variants: fadeInUp
-  }
-
   return (
     <motion.div
       className={`text-main tracking-wide ${className}`}
       ref={ref}
-      {...commonAnim}
+      initial="hidden"
+      animate={controls}
+      variants={fadeInUp}
     >
       <h3 className="block text-2xl">{title}</h3>
       {children}

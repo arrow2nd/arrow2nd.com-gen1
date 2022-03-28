@@ -8,7 +8,7 @@ import type { WorkContent } from 'types/cms/work'
 const Preview = async (req: NextApiRequest, res: NextApiResponse) => {
   const slug = toStringId(req.query.slug)
 
-  // slugが存在しない場合は404エラー
+  // slugが存在しない場合は404を返す
   if (!slug) {
     return res.status(404).end()
   }
@@ -20,7 +20,7 @@ const Preview = async (req: NextApiRequest, res: NextApiResponse) => {
     queries: { draftKey: toStringId(req.query.draftKey) }
   }).catch((err) => console.error(err))
 
-  // コンテンツが無い場合はslugが正しくないので401エラー
+  // コンテンツが無い場合はslugが正しくないので401を返す
   if (!content) {
     return res.status(401).json({ message: 'Invalid slug' })
   }
@@ -30,6 +30,7 @@ const Preview = async (req: NextApiRequest, res: NextApiResponse) => {
     slug: content.id,
     draftKey: req.query.draftKey
   })
+
   res.writeHead(307, { Location: `/works/${content.id}` })
   res.end('Preview mode enabled!')
 }

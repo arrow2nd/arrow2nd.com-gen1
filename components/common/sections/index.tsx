@@ -9,15 +9,11 @@ type Props = {
 
 const Sections = ({ className = '', contents }: Props): JSX.Element => {
   const textSections = contents.map(({ title, text }) => {
-    const lines = text.split('\n')
+    const lines = text.split('\n').map((line) => <p key={line}>{line}</p>)
 
     return (
       <Section key={title} title={title}>
-        <div className="mt-2 text-sm md:text-base font-normal">
-          {lines.map((line) => (
-            <p key={line}>{line}</p>
-          ))}
-        </div>
+        <div className="mt-2 text-sm md:text-base font-normal">{lines}</div>
       </Section>
     )
   })

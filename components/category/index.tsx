@@ -37,7 +37,7 @@ const Category = ({
       <SEO title={currentCategory} />
       <Title text="works" />
       <Tab current={currentCategory} categories={categories} />
-      <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-12">
+      <div className="mt-12 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {cards}
       </div>
     </Layout>

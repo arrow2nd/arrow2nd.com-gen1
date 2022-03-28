@@ -26,11 +26,10 @@ const Card = ({ id, title, description, thumbnail }: Props): JSX.Element => {
     controls.start(inView ? 'visible' : 'hidden')
   }, [controls, inView])
 
-  const href = `/works/${id}`
   const { imageProps, alt } = thumbnail
 
   return (
-    <Link href={href} scroll={false} passHref>
+    <Link href={`/works/${id}`} scroll={false} passHref>
       <motion.a
         className="block"
         ref={ref}

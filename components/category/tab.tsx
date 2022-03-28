@@ -7,19 +7,19 @@ type Props = {
   categories: CategoryContent[]
 }
 
-const Tab = ({ current, categories }: Props): JSX.Element => (
-  <div className="mt-10 flex flex-wrap">
-    {categories.map(({ name }) => (
-      <Button
-        key={name}
-        className="inline-block"
-        href={`/category/${name}`}
-        fill={current === name}
-      >
-        {name}
-      </Button>
-    ))}
-  </div>
-)
+const Tab = ({ current, categories }: Props): JSX.Element => {
+  const buttons = categories.map(({ name }) => (
+    <Button
+      key={name}
+      className="inline-block"
+      href={`/category/${name}`}
+      fill={current === name}
+    >
+      {name}
+    </Button>
+  ))
+
+  return <div className="mt-10 flex flex-wrap">{buttons}</div>
+}
 
 export default Tab

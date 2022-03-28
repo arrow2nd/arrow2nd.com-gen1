@@ -1,7 +1,3 @@
-import { motion } from 'framer-motion'
-
-import { hoverLink } from 'animations/variants'
-
 import Button from 'components/common/button'
 import Icon from 'components/common/icon'
 import Section from 'components/common/sections/section'

@@ -1,3 +1,4 @@
+/** サイトの情報 */
 export const Site = {
   defaultTitle: 'arrow2nd',
   defaultDescription: 'あろーのポートフォリオのようなもの。',
