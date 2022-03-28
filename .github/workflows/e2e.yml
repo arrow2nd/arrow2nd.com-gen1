@@ -30,6 +30,9 @@ jobs:
 
       - name: Run E2E test
         run: yarn test:e2e
+        env:
+          SERVICE_DOMAIN: ${{ secrets.SERVICE_DOMAIN }}
+          API_KEY: ${{ secrets.API_KEY }}
 
       - name: Upload screenshots
         uses: actions/upload-artifact@v3
