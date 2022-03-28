@@ -17,6 +17,7 @@ const Accounts = ({ className = '' }: Props): JSX.Element => {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
+      data-testid={`link-${icon}`}
       {...hoverLink}
     >
       <Icon name={icon} />
