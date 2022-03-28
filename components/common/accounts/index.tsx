@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 
 import { hoverLink } from 'animations/variants'
 
@@ -12,15 +13,11 @@ type Props = {
 
 const Accounts = ({ className = '' }: Props): JSX.Element => {
   const icons = accountLinks.map(({ icon, href }) => (
-    <motion.a
-      key={icon}
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      {...hoverLink}
-    >
-      <Icon name={icon} />
-    </motion.a>
+    <Link key={icon} href={href} passHref>
+      <motion.a target="_blank" rel="noopener noreferrer" {...hoverLink}>
+        <Icon name={icon} />
+      </motion.a>
+    </Link>
   ))
 
   return (
