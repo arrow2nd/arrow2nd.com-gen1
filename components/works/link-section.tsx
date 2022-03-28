@@ -21,7 +21,7 @@ const LinkSection = ({ items }: Props): JSX.Element => {
   ))
 
   return (
-    <Section className="mt-12" title="リンク">
+    <Section className="mt-12" title="リンク" dataTestId="link-section">
       <div className="mt-2 flex flex-wrap">{links}</div>
     </Section>
   )

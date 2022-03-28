@@ -10,9 +10,9 @@ test('works', async ({ page }, { project }) => {
   // 最下部までスクロール
   await page.locator('data-testid=footer').scrollIntoViewIfNeeded()
 
-  // 最後のセクションの表示アニメーションの完了を待つ
+  // リンクセクションの表示アニメーションの完了を待つ
   await page.waitForSelector(
-    `[data-testid="last-section"][style="opacity: 1; transform: none;"]`
+    `[data-testid="link-section"][style="opacity: 1; transform: none;"]`
   )
 
   // ページ全体のスクリーンショット
