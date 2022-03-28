@@ -14,6 +14,7 @@ const LinkSection = ({ items }: Props): JSX.Element => {
       key={text}
       className="inline-flex flex-row items-center"
       href={href}
+      targetBlank
     >
       <Icon name={icon[0]} />
       <span className="ml-2">{text}</span>
