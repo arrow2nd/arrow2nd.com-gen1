@@ -11,8 +11,8 @@ type Props = {
 const Carousel = ({ images }: Props): JSX.Element => {
   const carouselImages = images.map(({ imageProps, alt }) => (
     <Image
-      {...imageProps}
       key={imageProps.src}
+      {...imageProps}
       alt={alt}
       layout="responsive"
       placeholder="blur"
@@ -21,7 +21,7 @@ const Carousel = ({ images }: Props): JSX.Element => {
 
   return (
     <RRCarousel
-      className="mx-auto relative z-0 border border-gray-300 rounded-lg overflow-hidden"
+      className="md:mx-10 relative z-0 border-y-2 md:border-2 md:rounded-lg overflow-hidden"
       autoPlay
       interval={6000}
       transitionTime={600}

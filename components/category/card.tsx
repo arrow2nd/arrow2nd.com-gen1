@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { useEffect } from 'react'
 import { useInView } from 'react-intersection-observer'
 
-import { fadeInUp, hover } from 'animations/variants'
+import { fadeInUp, hoverCard } from 'animations/variants'
 
 import type { DynamicImage } from 'types/image'
 
@@ -13,9 +13,16 @@ type Props = {
   title: string
   description: string
   thumbnail: DynamicImage
+  dataTestId?: string
 }
 
-const Card = ({ id, title, description, thumbnail }: Props): JSX.Element => {
+const Card = ({
+  id,
+  title,
+  description,
+  thumbnail,
+  dataTestId
+}: Props): JSX.Element => {
   const controls = useAnimation()
   const { ref, inView } = useInView({
     threshold: 0.25,
@@ -26,36 +33,34 @@ const Card = ({ id, title, description, thumbnail }: Props): JSX.Element => {
     controls.start(inView ? 'visible' : 'hidden')
   }, [controls, inView])
 
-  const href = `/works/${id}`
   const { imageProps, alt } = thumbnail
 
   return (
-    <motion.div
-      ref={ref}
-      initial="hidden"
-      animate={controls}
-      variants={fadeInUp}
-    >
-      <Link href={href} passHref>
-        <a className="block border border-gray-300 overflow-hidden rounded-3xl shadow-md">
-          <motion.div whileHover={hover}>
+    <Link href={`/works/${id}`} scroll={false} passHref>
+      <motion.a
+        className="block"
+        ref={ref}
+        initial="hidden"
+        animate={controls}
+        variants={fadeInUp}
+        data-testid={dataTestId}
+      >
+        <motion.div {...hoverCard}>
+          <div className="text-main border-2 rounded-xl overflow-hidden">
             <Image
               {...imageProps}
-              className="rounded-3xl"
               alt={alt}
               layout="responsive"
               placeholder="blur"
             />
-          </motion.div>
-        </a>
-      </Link>
-      <Link href={href} passHref>
-        <a className="block mt-4 ml-1 hover:text-arrow2nd transition-colors">
-          <p>{title}</p>
-          <p className="text-sm text-natural-gray">{description}</p>
-        </a>
-      </Link>
-    </motion.div>
+          </div>
+          <div className="mt-4 ml-1">
+            <p>{title}</p>
+            <p className="text-sm font-normal">{description}</p>
+          </div>
+        </motion.div>
+      </motion.a>
+    </Link>
   )
 }
 

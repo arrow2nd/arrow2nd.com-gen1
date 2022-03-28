@@ -1,11 +1,12 @@
 import Accounts from 'components/common/accounts'
 
 const Footer = (): JSX.Element => (
-  <div className="flex flex-col mt-16 mb-8 text-center items-center">
-    <Accounts />
-    <p className="mt-6 text-sm text-natural-black">
-      © {new Date().getFullYear()} arrow2nd
-    </p>
+  <div
+    className="w-full px-10 py-12 flex items-center text-main"
+    data-testid="footer"
+  >
+    <p className="text-base">{`(c) ${new Date().getFullYear()}`} arrow2nd</p>
+    <Accounts className="ml-auto" />
   </div>
 )
 

@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Button from 'components/common/button'
 
 import type { CategoryContent } from 'types/cms/category'
 
@@ -8,24 +8,18 @@ type Props = {
 }
 
 const Tab = ({ current, categories }: Props): JSX.Element => {
-  const buttons = categories.map(({ name }) => {
-    const textStyle =
-      name === current
-        ? 'text-natural-white bg-natural-black'
-        : 'text-natural-black hover:text-natural-white'
+  const buttons = categories.map(({ name }) => (
+    <Button
+      key={name}
+      className="inline-block"
+      href={`/category/${name}`}
+      fill={current === name}
+    >
+      {name}
+    </Button>
+  ))
 
-    return (
-      <Link href={`/category/${name}`} key={name} passHref>
-        <a
-          className={`inline-block m-2 md:m-1 px-5 py-1 hover:bg-natural-black rounded-full tracking-widest transition-colors ${textStyle}`}
-        >
-          {name}
-        </a>
-      </Link>
-    )
-  })
-
-  return <div className="mt-12 md:mt-16 text-center">{buttons}</div>
+  return <div className="mt-10 flex flex-wrap">{buttons}</div>
 }
 
 export default Tab

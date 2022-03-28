@@ -23,7 +23,7 @@ const SEO = ({
     defaultDescription,
     titleTemplate,
     originUrl,
-    defaultImage,
+    githubIconUrl,
     twitterUsername
   } = Site
 
@@ -33,8 +33,8 @@ const SEO = ({
   const seo = {
     title: title ? titleTemplate.replace('%s', title) : defaultTitle,
     description: desc || defaultDescription,
-    imageUrl: imageUrl || `${baseUrl}${defaultImage}`,
-    url: `${baseUrl}${asPath}`
+    imageUrl: imageUrl || githubIconUrl,
+    url: baseUrl + asPath
   }
 
   return (
@@ -43,7 +43,7 @@ const SEO = ({
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.imageUrl} />
       <meta property="og:url" content={seo.url} />
-      {(article ? true : null) && <meta property="og:type" content="article" />}
+      {article && <meta property="og:type" content="article" />}
       <meta property="og:title" content={seo.title} />
       <meta property="og:description" content={seo.description} />
       <meta property="og:image" content={seo.imageUrl} />

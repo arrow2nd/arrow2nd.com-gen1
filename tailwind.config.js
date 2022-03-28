@@ -6,26 +6,17 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        default: ['"M PLUS Rounded 1c"', 'sans-serif']
+        default: ['"Zen Maru Gothic"', 'sans-serif']
       },
       colors: {
-        'natural-white': '#faf8f7',
-        'natural-black': '#1c1c1c',
-        'natural-gray': '#464646',
-        'blue-gray': '#ebeff2',
-        arrow2nd: '#5B94FF'
+        main: '#434343',
+        background: '#FBFBFB',
+        black: '#1C1C1C',
+        sea: '#45A3CC'
       },
       letterSpacing: {
-        super: '.25rem'
-      },
-      animation: {
-        fadeIn: 'fadeIn 0.8s cubic-bezier(0.33, 1, 0.68, 1) 0s 1 normal'
-      },
-      keyframes: {
-        fadeIn: {
-          '0%': { opacity: 0 },
-          '100%': { opacity: 1 }
-        }
+        0.2: '.2rem',
+        0.4: '.4rem'
       }
     }
   },

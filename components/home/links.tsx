@@ -1,25 +1,26 @@
+import { motion } from 'framer-motion'
 import Link from 'next/link'
 
-import { PageLinks } from 'data/page-links'
+import { hoverLink } from 'animations/variants'
+
+import { pageLinks } from 'data/pages'
 
 type Props = {
   className: string
 }
 
 const Links = ({ className }: Props): JSX.Element => {
-  const pageLinks = PageLinks.map(({ name, href }) => (
+  const links = pageLinks.map(({ name, href }) => (
     <Link key={name} href={href} passHref>
-      <a className="mx-4 hover:text-natural-black tracking-widest transition-colors">
+      <motion.a className="block" {...hoverLink}>
         {name}
-      </a>
+      </motion.a>
     </Link>
   ))
 
   return (
-    <div
-      className={`px-4 py-2 bg-blue-gray text-natural-gray rounded-full shadow-md ${className}`}
-    >
-      {pageLinks}
+    <div className={`space-y-4 text-xl text-main tracking-0.2 ${className}`}>
+      {links}
     </div>
   )
 }

@@ -1,25 +1,33 @@
-import FaIcon from 'components/common/fa-icon'
+import { motion } from 'framer-motion'
 
-import { AccountLinks } from 'data/account-links'
+import { hoverLink } from 'animations/variants'
+
+import Icon from 'components/common/icon'
+
+import { accountLinks } from 'data/accounts'
 
 type Props = {
   className?: string
 }
 
 const Accounts = ({ className = '' }: Props): JSX.Element => {
-  const links = AccountLinks.map(({ icon, href }) => (
-    <a
-      className="mx-2 text-natural-gray hover:text-black transition-colors"
+  const icons = accountLinks.map(({ icon, href }) => (
+    <motion.a
       key={icon}
       href={href}
       target="_blank"
       rel="noopener noreferrer"
+      {...hoverLink}
     >
-      <FaIcon name={icon} />
-    </a>
+      <Icon name={icon} />
+    </motion.a>
   ))
 
-  return <div className={`flex flex-row text-2xl ${className}`}>{links}</div>
+  return (
+    <div className={`flex flex-row text-2xl space-x-4 ${className}`}>
+      {icons}
+    </div>
+  )
 }
 
 export default Accounts

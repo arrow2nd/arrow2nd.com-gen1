@@ -3,15 +3,30 @@ import type { SectionContent } from 'types/cms/section'
 import Section from './section'
 
 type Props = {
+  className?: string
   contents: SectionContent[]
 }
 
-const Sections = ({ contents }: Props): JSX.Element => {
-  const sections = contents.map((item) => (
-    <Section key={item.title} {...item} />
-  ))
+const Sections = ({ className = '', contents }: Props): JSX.Element => {
+  const sectionMax = contents.length - 1
 
-  return <div className="text-center">{sections}</div>
+  const textSections = contents.map(({ title, text }, idx) => {
+    const lines = text.split('\n').map((line) => <p key={line}>{line}</p>)
+
+    return (
+      <Section
+        key={title}
+        title={title}
+        dataTestId={idx === sectionMax ? 'last-section' : undefined}
+      >
+        <div className="mt-2 text-sm md:text-base font-normal">{lines}</div>
+      </Section>
+    )
+  })
+
+  return (
+    <div className={`space-y-12 text-left ${className}`}>{textSections}</div>
+  )
 }
 
 export default Sections

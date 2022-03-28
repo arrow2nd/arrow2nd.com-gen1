@@ -3,7 +3,8 @@ type PageLink = {
   href: string
 }
 
-export const PageLinks: PageLink[] = [
+/** 各ページへのリンク */
+export const pageLinks: PageLink[] = [
   {
     name: 'about',
     href: '/about'

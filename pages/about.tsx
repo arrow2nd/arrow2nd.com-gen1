@@ -9,6 +9,7 @@ import type { SectionContent } from 'types/cms/section'
 type Props = InferGetStaticPropsType<typeof getStaticProps>
 
 const AboutPage: NextPage<Props> = (props: Props) => <About {...props} />
+
 export default AboutPage
 
 export const getStaticProps = async () => {

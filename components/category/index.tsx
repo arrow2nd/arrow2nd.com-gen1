@@ -22,6 +22,8 @@ const Category = ({
   contents,
   thumbnails
 }: Props): JSX.Element => {
+  const cardMax = contents.length - 1
+
   const cards = contents.map(({ id, title, description }, idx) => (
     <Card
       key={id}
@@ -29,6 +31,7 @@ const Category = ({
       title={title}
       description={description}
       thumbnail={thumbnails[idx]}
+      dataTestId={idx === cardMax ? `last-card` : undefined}
     />
   ))
 
@@ -36,11 +39,9 @@ const Category = ({
     <Layout>
       <SEO title={currentCategory} />
       <Title text="works" />
-      <div className="animate-fadeIn">
-        <Tab current={currentCategory} categories={categories} />
-        <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-12 md:mt-16">
-          {cards}
-        </div>
+      <Tab current={currentCategory} categories={categories} />
+      <div className="mt-12 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        {cards}
       </div>
     </Layout>
   )

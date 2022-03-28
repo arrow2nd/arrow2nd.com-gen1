@@ -6,7 +6,7 @@ import type { WorkContent } from 'types/cms/work'
 import type { DynamicImage } from 'types/image'
 
 import Carousel from './carousel'
-import LinkButton from './link-button'
+import LinkSection from './link-section'
 import Title from './title'
 
 type Props = {
@@ -15,21 +15,17 @@ type Props = {
 }
 
 const Works = ({ contents, images }: Props): JSX.Element => {
-  const { title, description, sections, links } = contents
+  const { category, title, description, sections, links } = contents
   const imageUrl = contents.images[0].image.url
 
-  const linkButtons = links.map((link) => (
-    <LinkButton key={link.text} {...link} />
-  ))
-
   return (
-    <Layout>
-      <SEO title={title} desc={description} imageUrl={imageUrl} />
-      <div className="mx-auto max-w-3xl animate-fadeIn">
-        <Carousel images={images} />
+    <Layout backPagePath={`/category/${category.name}`} disablePaddingX>
+      <SEO title={title} desc={description} imageUrl={imageUrl} article />
+      <Carousel images={images} />
+      <div className="px-10">
         <Title text={title} description={description} />
-        <Sections contents={sections} />
-        <div className="mt-16 text-center">{linkButtons}</div>
+        <Sections className="mt-10" contents={sections} />
+        <LinkSection items={links} />
       </div>
     </Layout>
   )

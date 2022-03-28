@@ -3,7 +3,8 @@ type AccountLink = {
   href: string
 }
 
-export const AccountLinks: AccountLink[] = [
+/** 各種アカウントのリンク */
+export const accountLinks: AccountLink[] = [
   {
     icon: 'twitter',
     href: 'https://twitter.com/arrow_2nd'
