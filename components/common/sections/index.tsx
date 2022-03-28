@@ -8,11 +8,17 @@ type Props = {
 }
 
 const Sections = ({ className = '', contents }: Props): JSX.Element => {
-  const textSections = contents.map(({ title, text }) => {
+  const sectionMax = contents.length - 1
+
+  const textSections = contents.map(({ title, text }, idx) => {
     const lines = text.split('\n').map((line) => <p key={line}>{line}</p>)
 
     return (
-      <Section key={title} title={title}>
+      <Section
+        key={title}
+        title={title}
+        dataTestId={idx === sectionMax ? 'last-section' : undefined}
+      >
         <div className="mt-2 text-sm md:text-base font-normal">{lines}</div>
       </Section>
     )

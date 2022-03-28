@@ -13,6 +13,7 @@ import Links from './links'
 const Home = (): JSX.Element => (
   <motion.div
     className="flex flex-col h-screen justify-center items-center font-medium"
+    data-testid="home-body"
     {...pageTransition}
   >
     <SEO />

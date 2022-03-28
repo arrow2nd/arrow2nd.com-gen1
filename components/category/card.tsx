@@ -13,9 +13,16 @@ type Props = {
   title: string
   description: string
   thumbnail: DynamicImage
+  dataTestId?: string
 }
 
-const Card = ({ id, title, description, thumbnail }: Props): JSX.Element => {
+const Card = ({
+  id,
+  title,
+  description,
+  thumbnail,
+  dataTestId
+}: Props): JSX.Element => {
   const controls = useAnimation()
   const { ref, inView } = useInView({
     threshold: 0.25,
@@ -36,6 +43,7 @@ const Card = ({ id, title, description, thumbnail }: Props): JSX.Element => {
         initial="hidden"
         animate={controls}
         variants={fadeInUp}
+        data-testid={dataTestId}
       >
         <motion.div {...hoverCard}>
           <div className="text-main border-2 rounded-xl overflow-hidden">

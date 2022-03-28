@@ -8,9 +8,15 @@ type Props = {
   className?: string
   title: string
   children: React.ReactNode
+  dataTestId?: string
 }
 
-const Section = ({ className = '', title, children }: Props): JSX.Element => {
+const Section = ({
+  className = '',
+  title,
+  children,
+  dataTestId
+}: Props): JSX.Element => {
   const controls = useAnimation()
   const { ref, inView } = useInView({
     threshold: 0.25,
@@ -28,6 +34,7 @@ const Section = ({ className = '', title, children }: Props): JSX.Element => {
       initial="hidden"
       animate={controls}
       variants={fadeInUp}
+      data-testid={dataTestId}
     >
       <h3 className="block text-2xl">{title}</h3>
       {children}

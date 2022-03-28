@@ -12,7 +12,7 @@ type Props = {
 const Links = ({ className }: Props): JSX.Element => {
   const links = pageLinks.map(({ name, href }) => (
     <Link key={name} href={href} passHref>
-      <motion.a className="block" data-testid={`link-${name}`} {...hoverLink}>
+      <motion.a className="block" {...hoverLink}>
         {name}
       </motion.a>
     </Link>

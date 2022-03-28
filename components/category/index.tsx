@@ -22,6 +22,8 @@ const Category = ({
   contents,
   thumbnails
 }: Props): JSX.Element => {
+  const cardMax = contents.length - 1
+
   const cards = contents.map(({ id, title, description }, idx) => (
     <Card
       key={id}
@@ -29,6 +31,7 @@ const Category = ({
       title={title}
       description={description}
       thumbnail={thumbnails[idx]}
+      dataTestId={idx === cardMax ? `last-card` : undefined}
     />
   ))
 
