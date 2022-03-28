@@ -23,7 +23,7 @@ const SEO = ({
     defaultDescription,
     titleTemplate,
     originUrl,
-    defaultImage,
+    githubIconUrl,
     twitterUsername
   } = Site
 
@@ -33,7 +33,7 @@ const SEO = ({
   const seo = {
     title: title ? titleTemplate.replace('%s', title) : defaultTitle,
     description: desc || defaultDescription,
-    imageUrl: imageUrl || baseUrl + defaultImage,
+    imageUrl: imageUrl || githubIconUrl,
     url: baseUrl + asPath
   }
 
