@@ -21,5 +21,5 @@ API_KEY=<microCMSのAPIキー>
 その後、以下のコマンドで実行
 
 ```
-yarn build & yarn start
+yarn build && yarn start
 ```
