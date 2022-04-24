@@ -1509,7 +1509,7 @@ __metadata:
     react: 18.0.0
     react-dom: 18.0.0
     react-icons: ^4.3.1
-    react-intersection-observer: ^8.34.0
+    react-intersection-observer: ^9.0.0
     react-responsive-carousel: ^3.2.23
     sharp: ^0.30.3
     tailwindcss: ^3.0.24
@@ -4619,12 +4619,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-intersection-observer@npm:^8.34.0":
-  version: 8.34.0
-  resolution: "react-intersection-observer@npm:8.34.0"
+"react-intersection-observer@npm:^9.0.0":
+  version: 9.0.0
+  resolution: "react-intersection-observer@npm:9.0.0"
   peerDependencies:
     react: ^15.0.0 || ^16.0.0 || ^17.0.0|| ^18.0.0
-  checksum: 7713fecfd1512c7f5a60f9f0bf15403b8f8bbd4110bcafaeaea6de36a0e0eb60368c3638f99e9c97b75ad8fc787ea48c241dcb5c694f821d7f2976f709082cc5
+  checksum: 5ce23faff4c02ef4841cc3b4f09749755e898e8831e4be977e2c64d501c4c32c6ef14a428e4ff5536a375635d62fd49ad1b60a324650cf2b8c0b9b48577f444b
   languageName: node
   linkType: hard
 
