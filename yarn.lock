@@ -1132,14 +1132,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:17.0.43":
-  version: 17.0.43
-  resolution: "@types/react@npm:17.0.43"
+"@types/react@npm:18.0.6":
+  version: 18.0.6
+  resolution: "@types/react@npm:18.0.6"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: 981b0993f5b3ea9d3488b8cc883201e8ae47ba7732929f788f450a79fd72829e658080d5084e67caa008e58d989b0abc1d5f36ff0a1cda09315ea3a3c0c9dc11
+  checksum: 368b40176f0dab30a611c3263bf1d9878cebede9ce8015bc5661a396787dbe41f0b667b8d6d448dea7bc8c0557bf3cb329ab2b16ad2dacb18eaa764358bd16d4
   languageName: node
   linkType: hard
 
@@ -1494,7 +1494,7 @@ __metadata:
     "@playwright/test": ^1.20.2
     "@trivago/prettier-plugin-sort-imports": ^3.2.0
     "@types/node": ^17.0.23
-    "@types/react": 17.0.43
+    "@types/react": 18.0.6
     autoprefixer: ^10.4.4
     eslint: 8.12.0
     eslint-config-next: 12.1.1
