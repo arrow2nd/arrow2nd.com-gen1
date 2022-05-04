@@ -1502,7 +1502,7 @@ __metadata:
     framer-motion: ^6.2.10
     microcms-js-sdk: ^2.0.0
     next: 12.1.5
-    next-sitemap: ^2.5.19
+    next-sitemap: ^2.5.20
     plaiceholder: ^2.3.0
     postcss: ^8.4.12
     prettier: ^2.6.2
@@ -3823,9 +3823,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-sitemap@npm:^2.5.19":
-  version: 2.5.19
-  resolution: "next-sitemap@npm:2.5.19"
+"next-sitemap@npm:^2.5.20":
+  version: 2.5.20
+  resolution: "next-sitemap@npm:2.5.20"
   dependencies:
     "@corex/deepmerge": ^2.6.148
     minimist: ^1.2.6
@@ -3833,7 +3833,7 @@ __metadata:
     next: "*"
   bin:
     next-sitemap: bin/next-sitemap
-  checksum: 998d885f360a20eb23c24b76f78dc4e1a280395dced398b8f3b2c0729c8164ac8c70d841f05145c57d4782955ad1685a6f4d82a24472a31c9e37b40b10c25987
+  checksum: b2a770575117d709bf0c90ca6f6e76a6602980472480cbaa1f60104dae01428ce2491e4e06a19365014dec32629b19b8d627c40df0137ee126390aa8da42c30e
   languageName: node
   linkType: hard
 
