@@ -1499,7 +1499,7 @@ __metadata:
     eslint: 8.12.0
     eslint-config-next: 12.1.1
     eslint-config-prettier: ^8.5.0
-    framer-motion: ^6.2.10
+    framer-motion: ^6.3.3
     microcms-js-sdk: ^2.0.0
     next: 12.1.5
     next-sitemap: ^2.5.20
@@ -2698,9 +2698,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"framer-motion@npm:^6.2.10":
-  version: 6.2.10
-  resolution: "framer-motion@npm:6.2.10"
+"framer-motion@npm:^6.3.3":
+  version: 6.3.3
+  resolution: "framer-motion@npm:6.3.3"
   dependencies:
     "@emotion/is-prop-valid": ^0.8.2
     framesync: 6.0.1
@@ -2714,7 +2714,7 @@ __metadata:
   dependenciesMeta:
     "@emotion/is-prop-valid":
       optional: true
-  checksum: 75cc1dd42d82aa7cc3a2e3097a743ac0e61789829565d340e93c0aacb32a3b6b78896a72023b4e8e76a79597acfe98f0b3058bead29fd497bf59e01c6d953d34
+  checksum: 905ccf2679a45b00f6fd3fa6220f73f176e0c14b43d65ceb5feb93e23b12098def275930b98926c9bd4320f0436564745ebcfd488d7a477646a7a4600362fdbf
   languageName: node
   linkType: hard
 
