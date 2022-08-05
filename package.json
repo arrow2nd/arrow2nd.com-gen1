@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "framer-motion": "^6.5.1",
-    "microcms-js-sdk": "^2.0.0",
+    "microcms-js-sdk": "^2.1.0",
     "next": "12.1.6",
     "plaiceholder": "^2.4.0",
     "react": "18.1.0",
