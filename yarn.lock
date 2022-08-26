@@ -1108,7 +1108,7 @@ __metadata:
     eslint-config-next: 12.1.6
     eslint-config-prettier: ^8.5.0
     framer-motion: ^6.5.1
-    microcms-js-sdk: ^2.1.0
+    microcms-js-sdk: ^2.2.1
     next: 12.1.6
     next-sitemap: ^2.5.28
     plaiceholder: ^2.4.0
@@ -2987,13 +2987,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"microcms-js-sdk@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "microcms-js-sdk@npm:2.1.0"
+"microcms-js-sdk@npm:^2.2.1":
+  version: 2.2.1
+  resolution: "microcms-js-sdk@npm:2.2.1"
   dependencies:
     node-fetch: ^2.6.1
     qs: ^6.10.1
-  checksum: c46c531b9037175369397b81016286597da17cc76a8531e9b6f37416efa2309ee0319c8cb286aa62bc3746b8a15f1e11563235aa0f81ee7943eb6b33a136bfc0
+  checksum: 455fcdc31a2fe652883afe0de984ea32baf4546dfbde62c1f43ce30fb6338729628680195df73ab8f6fa39ccb16e88ce3f494ade566eb4a52511f3dd2e4048c7
   languageName: node
   linkType: hard
 
