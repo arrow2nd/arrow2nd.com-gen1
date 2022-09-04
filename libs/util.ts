@@ -3,7 +3,7 @@
  * @param id IDパラメータ
  * @returns ID文字列
  */
-export const toStringId = (id: string | string[]) => {
+export const toStringId = (id: string | string[] | undefined) => {
   return Array.isArray(id) ? id[0] : id
 }
 
