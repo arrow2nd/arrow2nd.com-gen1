@@ -19,8 +19,8 @@ const Home = (): JSX.Element => (
     <SEO />
     <Image src={neko} alt="neko" width={192} height={110} placeholder="blur" />
     <span className="mt-2 text-3xl text-main tracking-0.4">arrow2nd</span>
-    <Dots className="mt-8" count={4} />
-    <Links className="mt-8" />
+    <Dots className="mt-6" count={4} />
+    <Links className="mt-6" />
   </motion.div>
 )
 

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 
-import { hoverLink } from 'animations/variants'
+import { hoverButton } from 'animations/variants'
 
 type Props = {
   className?: string
@@ -25,7 +25,7 @@ const Button = ({
       } rounded-xl tracking-widest ${className}`}
       target={targetBlank ? '_blank' : undefined}
       rel={targetBlank ? 'noopener noreferrer' : undefined}
-      {...hoverLink}
+      {...hoverButton}
     >
       {children}
     </motion.a>

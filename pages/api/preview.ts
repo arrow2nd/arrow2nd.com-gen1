@@ -7,7 +7,6 @@ import type { WorkContent } from 'types/cms/work'
 
 const Preview = async (req: NextApiRequest, res: NextApiResponse) => {
   const slug = toStringId(req.query.slug)
-
   // slugが存在しない場合は404を返す
   if (!slug) {
     return res.status(404).end()
