@@ -9,15 +9,22 @@ export const pageTransition: HTMLMotionProps<'div'> = {
 
 /** リンクのホバー＆クリックアニメーション */
 export const hoverLink: HTMLMotionProps<'a'> = {
-  whileHover: { scale: 1.12 },
+  whileHover: { scale: 1.1 },
   whileTap: { scale: 0.9 },
-  transition: { duration: 0.3, ease: 'circOut' }
+  transition: { duration: 0.3, ease: [0.16, 1, 0.3, 1] }
+}
+
+/** リンクボタンのホバー＆クリックアニメーション */
+export const hoverButton: HTMLMotionProps<'a'> = {
+  ...hoverLink,
+  whileHover: { scale: 1.05 },
+  whileTap: { scale: 0.95 }
 }
 
 /** カードのホバー＆クリックアニメーション */
 export const hoverCard: HTMLMotionProps<'div'> = {
-  whileHover: { scale: 1.1, filter: 'brightness(0.75)' },
-  whileTap: { scale: 0.9 },
+  whileHover: { scale: 1.05, filter: 'brightness(0.75)' },
+  whileTap: { scale: 0.95 },
   transition: { duration: 0.3, ease: 'easeInOut' }
 }
 
