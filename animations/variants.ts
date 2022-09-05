@@ -11,7 +11,7 @@ export const pageTransition: HTMLMotionProps<'div'> = {
 export const hoverLink: HTMLMotionProps<'a'> = {
   whileHover: { scale: 1.1 },
   whileTap: { scale: 0.9 },
-  transition: { duration: 0.3, ease: [0.16, 1, 0.3, 1] }
+  transition: { duration: 0.2, ease: 'easeInOut' }
 }
 
 /** リンクボタンのホバー＆クリックアニメーション */
@@ -25,7 +25,7 @@ export const hoverButton: HTMLMotionProps<'a'> = {
 export const hoverCard: HTMLMotionProps<'div'> = {
   whileHover: { scale: 1.05, filter: 'brightness(0.75)' },
   whileTap: { scale: 0.95 },
-  transition: { duration: 0.3, ease: 'easeInOut' }
+  transition: { duration: 0.2, ease: 'easeInOut' }
 }
 
 /** フェードインでポップアップ */
