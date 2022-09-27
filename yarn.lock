@@ -771,15 +771,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@playwright/test@npm:^1.25.1":
-  version: 1.25.1
-  resolution: "@playwright/test@npm:1.25.1"
+"@playwright/test@npm:^1.26.0":
+  version: 1.26.0
+  resolution: "@playwright/test@npm:1.26.0"
   dependencies:
     "@types/node": "*"
-    playwright-core: 1.25.1
+    playwright-core: 1.26.0
   bin:
     playwright: cli.js
-  checksum: 788ae0a7a576c599ce539ad75ee442b8c7f2a979d1dfd58d214ae4309ed2d595fa82fa8a8740e5c32f9da497a4e1ee90501483d33666d3004e76e50ce0269ef0
+  checksum: ce85c07e91f26f9f9ae9951011030347469ec3aa0fc2b2ab525e202cbcb9ba6dafe12d12ee10c13675c4ae8786f9ecd7b54bbe88034ad5f83b35d940cefc022c
   languageName: node
   linkType: hard
 
@@ -1147,7 +1147,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "arrow2nd.com@workspace:."
   dependencies:
-    "@playwright/test": ^1.25.1
+    "@playwright/test": ^1.26.0
     "@trivago/prettier-plugin-sort-imports": ^3.3.0
     "@types/node": ^18.7.14
     "@types/react": 18.0.18
@@ -3695,12 +3695,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"playwright-core@npm:1.25.1":
-  version: 1.25.1
-  resolution: "playwright-core@npm:1.25.1"
+"playwright-core@npm:1.26.0":
+  version: 1.26.0
+  resolution: "playwright-core@npm:1.26.0"
   bin:
     playwright: cli.js
-  checksum: 34d5602816f73d68de3c022423ef64f0214f5e9827c584bffa608ecf66a9058f2f578e037bd7cbe7f98be53d5b01602f1f98aec73db5b475d8ab22417c803db5
+  checksum: bd1da7baad202d48e51eb4810ff75960e5a61d137059031dd71a55856f4387e5b42086ea0d3e37d9a595cb5f65d19e2db19e0e06b873dd30a2f0d7177d5d7b41
   languageName: node
   linkType: hard
 
