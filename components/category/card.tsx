@@ -1,5 +1,5 @@
 import { motion, useAnimation } from 'framer-motion'
-import Image from 'next/image'
+import Image from 'next/future/image'
 import Link from 'next/link'
 import { useEffect } from 'react'
 import { useInView } from 'react-intersection-observer'
@@ -47,12 +47,7 @@ const Card = ({
       >
         <motion.div {...hoverCard}>
           <div className="text-main border-2 rounded-xl overflow-hidden">
-            <Image
-              {...imageProps}
-              alt={alt}
-              layout="responsive"
-              placeholder="blur"
-            />
+            <Image {...imageProps} alt={alt} placeholder="blur" />
           </div>
           <div className="mt-4 ml-1">
             <p>{title}</p>
