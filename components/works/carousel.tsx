@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from 'next/future/image'
 import { Carousel as RRCarousel } from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 
@@ -10,13 +10,7 @@ type Props = {
 
 const Carousel = ({ images }: Props): JSX.Element => {
   const carouselImages = images.map(({ imageProps, alt }) => (
-    <Image
-      key={imageProps.src}
-      {...imageProps}
-      alt={alt}
-      layout="responsive"
-      placeholder="blur"
-    />
+    <Image key={imageProps.src} {...imageProps} alt={alt} placeholder="blur" />
   ))
 
   return (
