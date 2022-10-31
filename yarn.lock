@@ -831,10 +831,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^18.11.7":
-  version: 18.11.7
-  resolution: "@types/node@npm:18.11.7"
-  checksum: 69d630825cf6fbf580d08d76a4d4836ef8c34ed4fe0842221ade87d275f517099cbfabe8e22397208e564bd24926db97699ab9db5c091383269a432b336665e2
+"@types/node@npm:^18.11.8":
+  version: 18.11.8
+  resolution: "@types/node@npm:18.11.8"
+  checksum: 60b358f97c1a029722dc785811b217615ef20249c3fbde60a65869cfd7a5cd5b1872ee95c79c187ef70e5a078f4ac7670d2129803985268b1f021ad6e8040af8
   languageName: node
   linkType: hard
 
@@ -1227,7 +1227,7 @@ __metadata:
   dependencies:
     "@playwright/test": ^1.27.1
     "@trivago/prettier-plugin-sort-imports": ^3.4.0
-    "@types/node": ^18.11.7
+    "@types/node": ^18.11.8
     "@types/react": 18.0.21
     autoprefixer: ^10.4.12
     eslint: 8.26.0
@@ -1236,7 +1236,7 @@ __metadata:
     framer-motion: ^7.6.1
     microcms-js-sdk: ^2.2.1
     next: 12.3.1
-    next-sitemap: ^3.1.29
+    next-sitemap: ^3.1.30
     plaiceholder: ^2.5.0
     postcss: ^8.4.18
     prettier: ^2.7.1
@@ -3488,9 +3488,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-sitemap@npm:^3.1.29":
-  version: 3.1.29
-  resolution: "next-sitemap@npm:3.1.29"
+"next-sitemap@npm:^3.1.30":
+  version: 3.1.30
+  resolution: "next-sitemap@npm:3.1.30"
   dependencies:
     "@corex/deepmerge": ^4.0.29
     minimist: ^1.2.6
@@ -3500,7 +3500,7 @@ __metadata:
   bin:
     next-sitemap: bin/next-sitemap.mjs
     next-sitemap-cjs: bin/next-sitemap.cjs
-  checksum: e5f922bd96783ba9548041a26bd5248abf6d433e3b856f5fa5cf7106ddae382c696163a268d068061c0041a46dfdea64cd3654772b587f2958903980a744f330
+  checksum: 93b50fae229bc693d8ae0e58d65af90a6d2034a1f9c0a3afa61aeffbe02f4240e9faf20859c17a39b73675e16425944ff5b237986570a206aed319fcd2316b21
   languageName: node
   linkType: hard
 
