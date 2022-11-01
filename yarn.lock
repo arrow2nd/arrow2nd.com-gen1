@@ -831,10 +831,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^18.11.8":
-  version: 18.11.8
-  resolution: "@types/node@npm:18.11.8"
-  checksum: 60b358f97c1a029722dc785811b217615ef20249c3fbde60a65869cfd7a5cd5b1872ee95c79c187ef70e5a078f4ac7670d2129803985268b1f021ad6e8040af8
+"@types/node@npm:^18.11.9":
+  version: 18.11.9
+  resolution: "@types/node@npm:18.11.9"
+  checksum: cc0aae109e9b7adefc32eecb838d6fad931663bb06484b5e9cbbbf74865c721b03d16fd8d74ad90e31dbe093d956a7c2c306ba5429ba0c00f3f7505103d7a496
   languageName: node
   linkType: hard
 
@@ -1227,14 +1227,14 @@ __metadata:
   dependencies:
     "@playwright/test": ^1.27.1
     "@trivago/prettier-plugin-sort-imports": ^3.4.0
-    "@types/node": ^18.11.8
+    "@types/node": ^18.11.9
     "@types/react": 18.0.21
     autoprefixer: ^10.4.12
     eslint: 8.26.0
     eslint-config-next: 12.3.1
     eslint-config-prettier: ^8.5.0
     framer-motion: ^7.6.1
-    microcms-js-sdk: ^2.2.1
+    microcms-js-sdk: ^2.3.0
     next: 12.3.1
     next-sitemap: ^3.1.30
     plaiceholder: ^2.5.0
@@ -1620,6 +1620,15 @@ __metadata:
   version: 3.20.3
   resolution: "core-js-pure@npm:3.20.3"
   checksum: a8ec44390849bcf0502f20e6349fa087944bb88ac83d796d7fd5ace837d242308aae54b247a6a56bec463e5ab9be08dfad48d389673c34e8e31cc0a661a17a95
+  languageName: node
+  linkType: hard
+
+"cross-fetch@npm:^3.1.5":
+  version: 3.1.5
+  resolution: "cross-fetch@npm:3.1.5"
+  dependencies:
+    node-fetch: 2.6.7
+  checksum: f6b8c6ee3ef993ace6277fd789c71b6acf1b504fd5f5c7128df4ef2f125a429e29cd62dc8c127523f04a5f2fa4771ed80e3f3d9695617f441425045f505cf3bb
   languageName: node
   linkType: hard
 
@@ -3298,13 +3307,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"microcms-js-sdk@npm:^2.2.1":
-  version: 2.2.1
-  resolution: "microcms-js-sdk@npm:2.2.1"
+"microcms-js-sdk@npm:^2.3.0":
+  version: 2.3.0
+  resolution: "microcms-js-sdk@npm:2.3.0"
   dependencies:
-    node-fetch: ^2.6.1
+    cross-fetch: ^3.1.5
     qs: ^6.10.1
-  checksum: 455fcdc31a2fe652883afe0de984ea32baf4546dfbde62c1f43ce30fb6338729628680195df73ab8f6fa39ccb16e88ce3f494ade566eb4a52511f3dd2e4048c7
+  checksum: 600ed4025228eb1a4edc32d7e6fb7989d7f53c05dd2a34490fa41db0af2228b127352ddfac8a438aed693f98712cf8103653091e981e7fb385796b38172e701b
   languageName: node
   linkType: hard
 
@@ -3600,7 +3609,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-fetch@npm:2.6.7, node-fetch@npm:^2.6.1":
+"node-fetch@npm:2.6.7":
   version: 2.6.7
   resolution: "node-fetch@npm:2.6.7"
   dependencies:
