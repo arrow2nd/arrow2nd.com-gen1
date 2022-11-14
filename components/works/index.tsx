@@ -25,7 +25,7 @@ const Works = ({ contents, images }: Props): JSX.Element => {
       <div className="px-10">
         <Title text={title} description={description} />
         <Sections className="mt-10" contents={sections} />
-        <LinkSection items={links} />
+        {links && <LinkSection items={links} />}
       </div>
     </Layout>
   )
