@@ -16,7 +16,6 @@ type Props = {
 
 const Works = ({ contents, images }: Props): JSX.Element => {
   const { category, title, description, sections, links } = contents
-  const existLinks = typeof links !== 'undefined' && links.length > 0
 
   return (
     <Layout backPagePath={`/category/${category.name}`} disablePaddingX>
@@ -30,7 +29,7 @@ const Works = ({ contents, images }: Props): JSX.Element => {
       <div className="px-10">
         <Title text={title} description={description} />
         <Sections className="mt-10" contents={sections} />
-        {existLinks && <LinkSection items={links} />}
+        {links.length > 0 && <LinkSection items={links} />}
       </div>
     </Layout>
   )
