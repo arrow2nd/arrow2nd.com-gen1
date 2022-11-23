@@ -1233,7 +1233,7 @@ __metadata:
     eslint: 8.26.0
     eslint-config-next: 12.3.1
     eslint-config-prettier: ^8.5.0
-    framer-motion: ^7.6.1
+    framer-motion: ^7.6.9
     microcms-js-sdk: ^2.3.0
     next: 12.3.1
     next-sitemap: ^3.1.30
@@ -1243,7 +1243,7 @@ __metadata:
     react: 18.2.0
     react-dom: 18.2.0
     react-icons: ^4.6.0
-    react-intersection-observer: ^9.4.0
+    react-intersection-observer: ^9.4.1
     react-responsive-carousel: ^3.2.23
     sharp: ^0.31.2
     tailwindcss: ^3.2.4
@@ -2420,9 +2420,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"framer-motion@npm:^7.6.1":
-  version: 7.6.1
-  resolution: "framer-motion@npm:7.6.1"
+"framer-motion@npm:^7.6.9":
+  version: 7.6.9
+  resolution: "framer-motion@npm:7.6.9"
   dependencies:
     "@emotion/is-prop-valid": ^0.8.2
     "@motionone/dom": 10.13.1
@@ -2437,7 +2437,7 @@ __metadata:
   dependenciesMeta:
     "@emotion/is-prop-valid":
       optional: true
-  checksum: ab9e65e44c1c6ed5655c68af26ca9be1f5bc9342202e516349c7cd0bc36399617f253cc4742991cf2bd75bd8cb2a1b72b18688ada8f3de55931e44bb22ab0169
+  checksum: db7f86add0873096cf86a4605247560f7a2ef3e8c9ff4524ec7ec7aec74129ad52cd7283c4446aba53f5de89fc8ba70fc4b78c8325ca0622083c6090834ce518
   languageName: node
   linkType: hard
 
@@ -4230,12 +4230,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-intersection-observer@npm:^9.4.0":
-  version: 9.4.0
-  resolution: "react-intersection-observer@npm:9.4.0"
+"react-intersection-observer@npm:^9.4.1":
+  version: 9.4.1
+  resolution: "react-intersection-observer@npm:9.4.1"
   peerDependencies:
-    react: ^15.0.0 || ^16.0.0 || ^17.0.0|| ^18.0.0
-  checksum: 6b9caff424c27ffac81bd7275f0d97512366d24434ebe15718f5e106e7198448a7027b1586ecbbb3eff81ac1348362320b7f740ac3d6cd505d62222fd251d718
+    react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
+  checksum: 13d1c36658470a781d8db8870dbd272c5b4b32329fa69c27ee96424de4e1599526a9bf2a91ea59922c18323c97d6909f0ac120c5af6076d1c01e654b43fb03c1
   languageName: node
   linkType: hard
 
