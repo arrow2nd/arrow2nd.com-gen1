@@ -22,10 +22,10 @@
     "react-icons": "^4.7.1",
     "react-intersection-observer": "^9.4.1",
     "react-responsive-carousel": "^3.2.23",
-    "sharp": "^0.31.2"
+    "sharp": "^0.31.3"
   },
   "devDependencies": {
-    "@playwright/test": "^1.28.1",
+    "@playwright/test": "^1.29.1",
     "@trivago/prettier-plugin-sort-imports": "^3.4.0",
     "@types/node": "^18.11.11",
     "@types/react": "18.0.21",
