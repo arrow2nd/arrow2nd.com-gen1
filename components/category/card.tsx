@@ -1,5 +1,5 @@
 import { motion, useAnimation } from 'framer-motion'
-import Image from 'next/future/image'
+import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect } from 'react'
 import { useInView } from 'react-intersection-observer'
