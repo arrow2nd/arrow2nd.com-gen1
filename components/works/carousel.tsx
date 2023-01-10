@@ -1,4 +1,4 @@
-import Image from 'next/future/image'
+import Image from 'next/image'
 import { Carousel as RRCarousel } from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 
