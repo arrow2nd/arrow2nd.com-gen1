@@ -18,8 +18,8 @@ const Button = ({
   fill = false,
   targetBlank = false
 }: Props): JSX.Element => (
-  <Link href={href} scroll={false} passHref>
-    <motion.a
+  <Link href={href} scroll={false}>
+    <motion.span
       className={`flex-none mt-2 mr-2 md:mr-4 px-6 py-1 ${
         fill ? 'text-white bg-main' : 'text-main border-2 border-main'
       } rounded-xl tracking-widest ${className}`}
@@ -28,7 +28,7 @@ const Button = ({
       {...hoverButton}
     >
       {children}
-    </motion.a>
+    </motion.span>
   </Link>
 )
 
