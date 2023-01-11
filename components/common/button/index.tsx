@@ -18,13 +18,16 @@ const Button = ({
   fill = false,
   targetBlank = false
 }: Props): JSX.Element => (
-  <Link href={href} scroll={false}>
+  <Link
+    href={href}
+    target={targetBlank ? '_blank' : undefined}
+    rel={targetBlank ? 'noopener noreferrer' : undefined}
+    scroll={false}
+  >
     <motion.span
       className={`flex-none mt-2 mr-2 md:mr-4 px-6 py-1 ${
         fill ? 'text-white bg-main' : 'text-main border-2 border-main'
       } rounded-xl tracking-widest ${className}`}
-      target={targetBlank ? '_blank' : undefined}
-      rel={targetBlank ? 'noopener noreferrer' : undefined}
       {...hoverButton}
     >
       {children}
