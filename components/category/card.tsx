@@ -36,15 +36,14 @@ const Card = ({
   const { imageProps, alt } = thumbnail
 
   return (
-    <Link href={`/works/${id}`} scroll={false} passHref>
-      <motion.a
-        className="block"
-        ref={ref}
-        initial="hidden"
-        animate={controls}
-        variants={fadeInUp}
-        data-testid={dataTestId}
-      >
+    <motion.div
+      ref={ref}
+      initial="hidden"
+      animate={controls}
+      variants={fadeInUp}
+      data-testid={dataTestId}
+    >
+      <Link href={`/works/${id}`} scroll={false}>
         <motion.div {...hoverCard}>
           <div className="text-main border-2 rounded-xl overflow-hidden">
             <Image {...imageProps} alt={alt} placeholder="blur" />
@@ -54,8 +53,8 @@ const Card = ({
             <p className="text-sm font-normal">{description}</p>
           </div>
         </motion.div>
-      </motion.a>
-    </Link>
+      </Link>
+    </motion.div>
   )
 }
 

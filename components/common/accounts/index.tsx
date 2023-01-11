@@ -13,11 +13,11 @@ type Props = {
 
 const Accounts = ({ className = '' }: Props): JSX.Element => {
   const icons = accountLinks.map(({ icon, href }) => (
-    <Link key={icon} href={href} passHref>
-      <motion.a target="_blank" rel="noopener noreferrer" {...hoverLink}>
+    <motion.span key={icon} {...hoverLink}>
+      <Link href={href} target="_blank" rel="noopener noreferrer">
         <Icon name={icon} />
-      </motion.a>
-    </Link>
+      </Link>
+    </motion.span>
   ))
 
   return (

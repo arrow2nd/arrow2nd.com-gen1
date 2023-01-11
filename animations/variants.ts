@@ -8,14 +8,14 @@ export const pageTransition: HTMLMotionProps<'div'> = {
 }
 
 /** リンクのホバー＆クリックアニメーション */
-export const hoverLink: HTMLMotionProps<'a'> = {
+export const hoverLink: HTMLMotionProps<'span'> = {
   whileHover: { scale: 1.1 },
   whileTap: { scale: 0.9 },
   transition: { duration: 0.2, ease: 'easeInOut' }
 }
 
 /** リンクボタンのホバー＆クリックアニメーション */
-export const hoverButton: HTMLMotionProps<'a'> = {
+export const hoverButton: HTMLMotionProps<'span'> = {
   ...hoverLink,
   whileHover: { scale: 1.05 },
   whileTap: { scale: 0.95 }
