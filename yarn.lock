@@ -1150,7 +1150,7 @@ __metadata:
     eslint: 8.31.0
     eslint-config-next: 13.1.1
     eslint-config-prettier: ^8.6.0
-    framer-motion: ^8.4.3
+    framer-motion: ^8.4.4
     microcms-js-sdk: ^2.3.2
     next: 13.1.1
     next-sitemap: ^3.1.45
@@ -2349,9 +2349,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"framer-motion@npm:^8.4.3":
-  version: 8.4.3
-  resolution: "framer-motion@npm:8.4.3"
+"framer-motion@npm:^8.4.4":
+  version: 8.4.4
+  resolution: "framer-motion@npm:8.4.4"
   dependencies:
     "@emotion/is-prop-valid": ^0.8.2
     "@motionone/dom": ^10.15.3
@@ -2363,7 +2363,7 @@ __metadata:
   dependenciesMeta:
     "@emotion/is-prop-valid":
       optional: true
-  checksum: 5b350f0afb6e6e8482519c3ea685911d80c2fecaff3d8dd57d11b43a3e1f44d45e932312afe54ec349c6be849a94efc66671663e7d6a8d22d334afe3dc721226
+  checksum: f769feb38e8d9369505896ffe9f266c29991f7abf4fcf89cd7e7ab3eddf9f40f718f1653d6350e4d876c16c0daa153160da7b29c349c030156dc607a68dd1b58
   languageName: node
   linkType: hard
 
