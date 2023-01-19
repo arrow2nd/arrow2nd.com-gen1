@@ -13,7 +13,7 @@
     "fmt": "prettier --write ."
   },
   "dependencies": {
-    "framer-motion": "^8.4.7",
+    "framer-motion": "^8.5.0",
     "microcms-js-sdk": "^2.3.2",
     "next": "13.1.1",
     "plaiceholder": "^2.5.0",
