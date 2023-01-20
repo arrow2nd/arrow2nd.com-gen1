@@ -5,6 +5,7 @@ import {
   RiGooglePlayLine,
   RiLineLine,
   RiLink,
+  RiMastodonLine,
   RiQuestionLine,
   RiTwitterLine
 } from 'react-icons/ri'
@@ -18,6 +19,7 @@ const Icon = ({ name }: Props): JSX.Element => {
     link: <RiLink />,
     download: <RiDownloadLine />,
     twitter: <RiTwitterLine />,
+    mastodon: <RiMastodonLine />,
     mail: <MdOutlineMail />,
     github: <RiGithubLine />,
     line: <RiLineLine />,
