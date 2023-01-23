@@ -4,6 +4,5 @@ export const Site = {
   defaultDescription: 'あろーのポートフォリオのようなもの。',
   titleTemplate: `%s | arrow2nd`,
   originUrl: 'https://www.arrow2nd.com/',
-  githubIconUrl: 'https://avatars.githubusercontent.com/u/44780846?v=4',
-  twitterUsername: '@arrow_2nd'
+  githubIconUrl: 'https://avatars.githubusercontent.com/u/44780846?v=4'
 }

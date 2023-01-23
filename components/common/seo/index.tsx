@@ -23,8 +23,7 @@ const SEO = ({
     defaultDescription,
     titleTemplate,
     originUrl,
-    githubIconUrl,
-    twitterUsername
+    githubIconUrl
   } = Site
 
   // URL末尾のスラッシュを削除
@@ -51,7 +50,6 @@ const SEO = ({
         name="twitter:card"
         content={article ? 'summary_large_image' : 'summary'}
       />
-      <meta name="twitter:creator" content={twitterUsername} />
       <meta name="twitter:title" content={seo.title} />
       <meta name="twitter:description" content={seo.description} />
       <meta name="twitter:image" content={seo.imageUrl} />
