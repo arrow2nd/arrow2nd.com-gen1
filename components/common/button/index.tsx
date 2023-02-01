@@ -25,8 +25,8 @@ const Button = ({
     scroll={false}
   >
     <motion.span
-      className={`flex-none mt-2 mr-2 md:mr-4 px-6 py-1 ${
-        fill ? 'text-white bg-main' : 'text-main border-2 border-main'
+      className={`flex-none mt-2 mr-2 md:mr-4 px-6 py-1 border-2 border-main ${
+        fill ? 'text-white bg-main' : 'text-main'
       } rounded-xl tracking-widest ${className}`}
       {...hoverButton}
     >
