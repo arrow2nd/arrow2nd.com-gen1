@@ -20,7 +20,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1",
-    "react-intersection-observer": "^9.4.1",
+    "react-intersection-observer": "^9.4.2",
     "react-responsive-carousel": "^3.2.23",
     "sharp": "^0.31.3"
   },
@@ -36,7 +36,7 @@
     "next-sitemap": "^3.1.52",
     "postcss": "^8.4.21",
     "prettier": "^2.8.4",
-    "tailwindcss": "^3.2.4",
+    "tailwindcss": "^3.2.6",
     "typescript": "4.9.4"
   },
   "packageManager": "yarn@3.1.1"
