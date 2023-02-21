@@ -1,20 +1,20 @@
-import { motion, useAnimation } from 'framer-motion'
-import Image from 'next/image'
-import Link from 'next/link'
-import { useEffect } from 'react'
-import { useInView } from 'react-intersection-observer'
+import { motion, useAnimation } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 
-import { fadeInUp, hoverCard } from 'animations/variants'
+import { fadeInUp, hoverCard } from "animations/variants";
 
-import type { DynamicImage } from 'types/image'
+import type { DynamicImage } from "types/image";
 
 type Props = {
-  id: string
-  title: string
-  description: string
-  thumbnail: DynamicImage
-  dataTestId?: string
-}
+  id: string;
+  title: string;
+  description: string;
+  thumbnail: DynamicImage;
+  dataTestId?: string;
+};
 
 const Card = ({
   id,
@@ -23,17 +23,17 @@ const Card = ({
   thumbnail,
   dataTestId
 }: Props): JSX.Element => {
-  const controls = useAnimation()
+  const controls = useAnimation();
   const { ref, inView } = useInView({
     threshold: 0.25,
     triggerOnce: true
-  })
+  });
 
   useEffect(() => {
-    controls.start(inView ? 'visible' : 'hidden')
-  }, [controls, inView])
+    controls.start(inView ? "visible" : "hidden");
+  }, [controls, inView]);
 
-  const { imageProps, alt } = thumbnail
+  const { imageProps, alt } = thumbnail;
 
   return (
     <motion.div
@@ -55,7 +55,7 @@ const Card = ({
         </motion.div>
       </Link>
     </motion.div>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;

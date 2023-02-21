@@ -1,4 +1,4 @@
-import Accounts from 'components/common/accounts'
+import Accounts from "components/common/accounts";
 
 const Footer = (): JSX.Element => (
   <div
@@ -8,6 +8,6 @@ const Footer = (): JSX.Element => (
     <p className="text-base">{`(c) ${new Date().getFullYear()}`} arrow2nd</p>
     <Accounts className="ml-auto" />
   </div>
-)
+);
 
-export default Footer
+export default Footer;

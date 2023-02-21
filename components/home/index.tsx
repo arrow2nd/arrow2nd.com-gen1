@@ -1,14 +1,14 @@
-import { motion } from 'framer-motion'
-import Image from 'next/image'
+import { motion } from "framer-motion";
+import Image from "next/image";
 
-import { pageTransition } from 'animations/variants'
+import { pageTransition } from "animations/variants";
 
-import Dots from 'components/common/dots'
-import SEO from 'components/common/seo'
+import Dots from "components/common/dots";
+import SEO from "components/common/seo";
 
-import neko from 'public/neko.png'
+import neko from "public/neko.png";
 
-import Links from './links'
+import Links from "./links";
 
 const Home = (): JSX.Element => (
   <motion.div
@@ -22,6 +22,6 @@ const Home = (): JSX.Element => (
     <Dots className="mt-6" count={4} />
     <Links className="mt-6" />
   </motion.div>
-)
+);
 
-export default Home
+export default Home;

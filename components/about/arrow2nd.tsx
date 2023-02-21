@@ -1,9 +1,9 @@
-import { motion } from 'framer-motion'
-import Image from 'next/image'
+import { motion } from "framer-motion";
+import Image from "next/image";
 
-import { fadeInPopup } from 'animations/variants'
+import { fadeInPopup } from "animations/variants";
 
-import arrow2nd from 'public/arrow2nd.png'
+import arrow2nd from "public/arrow2nd.png";
 
 const Arrow2nd = (): JSX.Element => (
   <motion.div
@@ -20,6 +20,6 @@ const Arrow2nd = (): JSX.Element => (
       placeholder="blur"
     />
   </motion.div>
-)
+);
 
-export default Arrow2nd
+export default Arrow2nd;

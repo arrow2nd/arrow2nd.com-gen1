@@ -1,20 +1,20 @@
-import Layout from 'components/common/layout'
-import SEO from 'components/common/seo'
-import Title from 'components/common/title'
+import Layout from "components/common/layout";
+import SEO from "components/common/seo";
+import Title from "components/common/title";
 
-import type { CategoryContent } from 'types/cms/category'
-import type { WorkContent } from 'types/cms/work'
-import type { DynamicImage } from 'types/image'
+import type { CategoryContent } from "types/cms/category";
+import type { WorkContent } from "types/cms/work";
+import type { DynamicImage } from "types/image";
 
-import Card from './card'
-import Tab from './tab'
+import Card from "./card";
+import Tab from "./tab";
 
 type Props = {
-  currentCategory: string
-  categories: CategoryContent[]
-  contents: WorkContent[]
-  thumbnails: DynamicImage[]
-}
+  currentCategory: string;
+  categories: CategoryContent[];
+  contents: WorkContent[];
+  thumbnails: DynamicImage[];
+};
 
 const Category = ({
   currentCategory,
@@ -22,7 +22,7 @@ const Category = ({
   contents,
   thumbnails
 }: Props): JSX.Element => {
-  const cardMax = contents.length - 1
+  const cardMax = contents.length - 1;
 
   const cards = contents.map(({ id, title, description }, idx) => (
     <Card
@@ -33,7 +33,7 @@ const Category = ({
       thumbnail={thumbnails[idx]}
       dataTestId={idx === cardMax ? `last-card` : undefined}
     />
-  ))
+  ));
 
   return (
     <Layout>
@@ -44,7 +44,7 @@ const Category = ({
         {cards}
       </div>
     </Layout>
-  )
-}
+  );
+};
 
-export default Category
+export default Category;
