@@ -1,3 +1,3 @@
 export type CategoryContent = {
-  name: string
-}
+  name: string;
+};

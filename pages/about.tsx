@@ -1,22 +1,22 @@
-import type { InferGetStaticPropsType, NextPage } from 'next'
+import type { InferGetStaticPropsType, NextPage } from "next";
 
-import About from 'components/about'
+import About from "components/about";
 
-import { Client } from 'libs/client'
+import { Client } from "libs/client";
 
-import type { SectionContent } from 'types/cms/section'
+import type { SectionContent } from "types/cms/section";
 
-type Props = InferGetStaticPropsType<typeof getStaticProps>
+type Props = InferGetStaticPropsType<typeof getStaticProps>;
 
-const AboutPage: NextPage<Props> = (props: Props) => <About {...props} />
+const AboutPage: NextPage<Props> = (props: Props) => <About {...props} />;
 
-export default AboutPage
+export default AboutPage;
 
 export const getStaticProps = async () => {
-  const results = await Client.getList<SectionContent>({ endpoint: 'about' })
+  const results = await Client.getList<SectionContent>({ endpoint: "about" });
   return {
     props: {
       contents: results.contents
     }
-  }
-}
+  };
+};

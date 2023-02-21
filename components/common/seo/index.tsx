@@ -1,22 +1,22 @@
-import Head from 'next/head'
-import { useRouter } from 'next/router'
+import Head from "next/head";
+import { useRouter } from "next/router";
 
-import { Site } from 'data/site'
+import { Site } from "data/site";
 
 type Props = {
-  title?: string
-  desc?: string
-  imageUrl?: string
-  article?: boolean
-}
+  title?: string;
+  desc?: string;
+  imageUrl?: string;
+  article?: boolean;
+};
 
 const SEO = ({
-  title = '',
-  desc = '',
-  imageUrl = '',
+  title = "",
+  desc = "",
+  imageUrl = "",
   article = false
 }: Props): JSX.Element => {
-  const { asPath } = useRouter()
+  const { asPath } = useRouter();
 
   const {
     defaultTitle,
@@ -24,17 +24,17 @@ const SEO = ({
     titleTemplate,
     originUrl,
     githubIconUrl
-  } = Site
+  } = Site;
 
   // URL末尾のスラッシュを削除
-  const baseUrl = originUrl ? originUrl.slice(0, -1) : ''
+  const baseUrl = originUrl ? originUrl.slice(0, -1) : "";
 
   const seo = {
-    title: title ? titleTemplate.replace('%s', title) : defaultTitle,
+    title: title ? titleTemplate.replace("%s", title) : defaultTitle,
     description: desc || defaultDescription,
     imageUrl: imageUrl || githubIconUrl,
     url: baseUrl + asPath
-  }
+  };
 
   return (
     <Head>
@@ -48,13 +48,13 @@ const SEO = ({
       <meta property="og:image" content={seo.imageUrl} />
       <meta
         name="twitter:card"
-        content={article ? 'summary_large_image' : 'summary'}
+        content={article ? "summary_large_image" : "summary"}
       />
       <meta name="twitter:title" content={seo.title} />
       <meta name="twitter:description" content={seo.description} />
       <meta name="twitter:image" content={seo.imageUrl} />
     </Head>
-  )
-}
+  );
+};
 
-export default SEO
+export default SEO;

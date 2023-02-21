@@ -4,8 +4,8 @@
  * @returns ID文字列
  */
 export const toStringId = (id: string | string[] | undefined) => {
-  return Array.isArray(id) ? id[0] : id
-}
+  return Array.isArray(id) ? id[0] : id;
+};
 
 /**
  * DraftKeyが存在するかどうか
@@ -14,8 +14,8 @@ export const toStringId = (id: string | string[] | undefined) => {
  */
 export const isDraft = (arg: any): arg is { draftKey: string } => {
   if (!arg?.draftKey) {
-    return false
+    return false;
   }
 
-  return typeof arg.draftKey === 'string'
-}
+  return typeof arg.draftKey === "string";
+};

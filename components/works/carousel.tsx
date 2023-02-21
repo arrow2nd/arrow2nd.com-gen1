@@ -1,17 +1,17 @@
-import Image from 'next/image'
-import { Carousel as RRCarousel } from 'react-responsive-carousel'
-import 'react-responsive-carousel/lib/styles/carousel.min.css'
+import Image from "next/image";
+import { Carousel as RRCarousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-import type { DynamicImage } from 'types/image'
+import type { DynamicImage } from "types/image";
 
 type Props = {
-  images: DynamicImage[]
-}
+  images: DynamicImage[];
+};
 
 const Carousel = ({ images }: Props): JSX.Element => {
   const carouselImages = images.map(({ imageProps, alt }) => (
     <Image key={imageProps.src} {...imageProps} alt={alt} placeholder="blur" />
-  ))
+  ));
 
   return (
     <RRCarousel
@@ -25,7 +25,7 @@ const Carousel = ({ images }: Props): JSX.Element => {
     >
       {carouselImages}
     </RRCarousel>
-  )
-}
+  );
+};
 
-export default Carousel
+export default Carousel;

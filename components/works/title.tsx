@@ -1,9 +1,9 @@
-import Dots from 'components/common/dots'
+import Dots from "components/common/dots";
 
 type Props = {
-  text: string
-  description: string
-}
+  text: string;
+  description: string;
+};
 
 const Title = ({ text, description }: Props): JSX.Element => (
   <div className="mt-8 text-main text-left">
@@ -13,6 +13,6 @@ const Title = ({ text, description }: Props): JSX.Element => (
     <p className="mt-2 text-base font-normal">{description}</p>
     <Dots className="mt-10" count={4} />
   </div>
-)
+);
 
-export default Title
+export default Title;

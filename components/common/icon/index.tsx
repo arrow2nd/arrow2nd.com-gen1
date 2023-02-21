@@ -1,4 +1,4 @@
-import { MdOutlineMail } from 'react-icons/md'
+import { MdOutlineMail } from "react-icons/md";
 import {
   RiDownloadLine,
   RiGithubLine,
@@ -8,11 +8,11 @@ import {
   RiMastodonLine,
   RiQuestionLine,
   RiTwitterLine
-} from 'react-icons/ri'
+} from "react-icons/ri";
 
 type Props = {
-  name: string
-}
+  name: string;
+};
 
 const Icon = ({ name }: Props): JSX.Element => {
   const icons: { [name: string]: JSX.Element } = {
@@ -24,9 +24,9 @@ const Icon = ({ name }: Props): JSX.Element => {
     github: <RiGithubLine />,
     line: <RiLineLine />,
     googleplay: <RiGooglePlayLine />
-  }
+  };
 
-  return icons[name] || <RiQuestionLine />
-}
+  return icons[name] || <RiQuestionLine />;
+};
 
-export default Icon
+export default Icon;

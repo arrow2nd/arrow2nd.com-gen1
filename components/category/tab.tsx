@@ -1,11 +1,11 @@
-import Button from 'components/common/button'
+import Button from "components/common/button";
 
-import type { CategoryContent } from 'types/cms/category'
+import type { CategoryContent } from "types/cms/category";
 
 type Props = {
-  current: string
-  categories: CategoryContent[]
-}
+  current: string;
+  categories: CategoryContent[];
+};
 
 const Tab = ({ current, categories }: Props): JSX.Element => {
   const buttons = categories.map(({ name }) => (
@@ -17,9 +17,9 @@ const Tab = ({ current, categories }: Props): JSX.Element => {
     >
       {name}
     </Button>
-  ))
+  ));
 
-  return <div className="mt-10 flex flex-wrap">{buttons}</div>
-}
+  return <div className="mt-10 flex flex-wrap">{buttons}</div>;
+};
 
-export default Tab
+export default Tab;

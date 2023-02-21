@@ -1,31 +1,31 @@
-import { motion, useAnimation } from 'framer-motion'
-import { useEffect } from 'react'
-import { useInView } from 'react-intersection-observer'
+import { motion, useAnimation } from "framer-motion";
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 
-import { fadeInUp } from 'animations/variants'
+import { fadeInUp } from "animations/variants";
 
 type Props = {
-  className?: string
-  title: string
-  children: React.ReactNode
-  dataTestId?: string
-}
+  className?: string;
+  title: string;
+  children: React.ReactNode;
+  dataTestId?: string;
+};
 
 const Section = ({
-  className = '',
+  className = "",
   title,
   children,
   dataTestId
 }: Props): JSX.Element => {
-  const controls = useAnimation()
+  const controls = useAnimation();
   const { ref, inView } = useInView({
     threshold: 0.25,
     triggerOnce: true
-  })
+  });
 
   useEffect(() => {
-    controls.start(inView ? 'visible' : 'hidden')
-  }, [controls, inView])
+    controls.start(inView ? "visible" : "hidden");
+  }, [controls, inView]);
 
   return (
     <motion.div
@@ -39,7 +39,7 @@ const Section = ({
       <h3 className="block text-2xl">{title}</h3>
       {children}
     </motion.div>
-  )
-}
+  );
+};
 
-export default Section
+export default Section;
