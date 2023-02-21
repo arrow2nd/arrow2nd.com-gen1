@@ -24,5 +24,5 @@ export type WorkContent = {
   title: string;
   description: string;
   sections: SectionContent[];
-  links?: LinkContent[];
+  links: LinkContent[];
 };
