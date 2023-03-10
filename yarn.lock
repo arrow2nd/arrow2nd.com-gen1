@@ -968,17 +968,17 @@ __metadata:
     framer-motion: ^8.5.5
     microcms-js-sdk: ^2.3.2
     next: 13.1.1
-    next-sitemap: ^3.1.52
+    next-sitemap: ^3.1.55
     plaiceholder: ^2.5.0
     postcss: ^8.4.21
     prettier: ^2.8.4
     react: 18.2.0
     react-dom: 18.2.0
-    react-icons: ^4.7.1
-    react-intersection-observer: ^9.4.2
+    react-icons: ^4.8.0
+    react-intersection-observer: ^9.4.3
     react-responsive-carousel: ^3.2.23
     sharp: ^0.31.3
-    tailwindcss: ^3.2.6
+    tailwindcss: ^3.2.7
     typescript: 4.9.4
   languageName: unknown
   linkType: soft
@@ -3247,9 +3247,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-sitemap@npm:^3.1.52":
-  version: 3.1.52
-  resolution: "next-sitemap@npm:3.1.52"
+"next-sitemap@npm:^3.1.55":
+  version: 3.1.55
+  resolution: "next-sitemap@npm:3.1.55"
   dependencies:
     "@corex/deepmerge": ^4.0.29
     minimist: ^1.2.7
@@ -3259,7 +3259,7 @@ __metadata:
   bin:
     next-sitemap: bin/next-sitemap.mjs
     next-sitemap-cjs: bin/next-sitemap.cjs
-  checksum: e82ae8652f3cc9a66ae585eb059f00e15247dc1306344b8d1f53438b211e40b8744a64768d2c7bf88d167d791e0da40877ab2c4b6655e33a0d1cf918f3ac385b
+  checksum: 1c3a7686565203275cf3004d3ec7c8b487468454cf0ffd72a168ac395c740843daee5f670019bb14faa9055773ce6203ac52596d8cc7a48b1b12cfb1bad6a691
   languageName: node
   linkType: hard
 
@@ -3972,21 +3972,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-icons@npm:^4.7.1":
-  version: 4.7.1
-  resolution: "react-icons@npm:4.7.1"
+"react-icons@npm:^4.8.0":
+  version: 4.8.0
+  resolution: "react-icons@npm:4.8.0"
   peerDependencies:
     react: "*"
-  checksum: ed3cbdc5fc0c4d7d2debf78fdc8c4c80aeacf85a506a9a3c11b1d5922de393ac0a6542012b7fb81761e9280c54d0f26827d50a92b54ec8f0c8e52364d89970b5
+  checksum: 4dbba7ad989c295b410e19b2a702722dae44368cb04b6515f9471353552f31ac80bd350f121d5bff79f81504b84039ede44d09e9f035f48bb1032e6eace126c4
   languageName: node
   linkType: hard
 
-"react-intersection-observer@npm:^9.4.2":
-  version: 9.4.2
-  resolution: "react-intersection-observer@npm:9.4.2"
+"react-intersection-observer@npm:^9.4.3":
+  version: 9.4.3
+  resolution: "react-intersection-observer@npm:9.4.3"
   peerDependencies:
     react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
-  checksum: 038786fe4678d76b71bb1f1b1e46153521cb4e91e1a4a8732b4a00aa0a818171c312b8ae04907a340d1c8cbb390d4a548a4b05fe99cab9e413d172024a5e42e8
+  checksum: ac31c6c76ce72019a1fb50fe6b53ef6429d98b9e9b937f92d16635ef8586392c7058bb61526a8fe6bea6ce36c006015fe2d8893bac43eda6157b9e6b17ad9b68
   languageName: node
   linkType: hard
 
@@ -4584,9 +4584,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:^3.2.6":
-  version: 3.2.6
-  resolution: "tailwindcss@npm:3.2.6"
+"tailwindcss@npm:^3.2.7":
+  version: 3.2.7
+  resolution: "tailwindcss@npm:3.2.7"
   dependencies:
     arg: ^5.0.2
     chokidar: ^3.5.3
@@ -4616,7 +4616,7 @@ __metadata:
   bin:
     tailwind: lib/cli.js
     tailwindcss: lib/cli.js
-  checksum: 908451ff7b334b2aec2a0ba5bf426a786a3f190b440a1f8ede206d889448ffda3b77349829f06dc297336fd0b5edc696ae5f23b808d6444bb5c689f218e95323
+  checksum: 819446bf67acea1fc738f345d80f328b7bb6e6ef4b24070249a11219307045881cf97baed6258cbdcede7fa18886e9c9c41fd0fa087b3e987cf2948560a2f164
   languageName: node
   linkType: hard
 
