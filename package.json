@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@next/env": "*",
-    "framer-motion": "^8.5.5",
+    "framer-motion": "^10.0.0",
     "microcms-js-sdk": "^2.3.2",
     "next": "13.2.4",
     "plaiceholder": "^2.5.0",
