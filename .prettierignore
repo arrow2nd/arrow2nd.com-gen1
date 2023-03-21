@@ -1,6 +1,7 @@
 .cache
 .next
 .vercel
+pnpm-lock.yaml
 public
 out
 node_modules
