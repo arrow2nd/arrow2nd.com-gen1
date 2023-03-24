@@ -23,7 +23,7 @@
     "react-icons": "^4.8.0",
     "react-intersection-observer": "^9.4.3",
     "react-responsive-carousel": "^3.2.23",
-    "sharp": "^0.31.3"
+    "sharp": "^0.32.0"
   },
   "devDependencies": {
     "@playwright/test": "^1.31.2",
