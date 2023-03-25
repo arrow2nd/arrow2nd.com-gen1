@@ -5,7 +5,7 @@ specifiers:
   '@playwright/test': ^1.31.2
   '@trivago/prettier-plugin-sort-imports': ^4.1.1
   '@types/node': ^18.15.2
-  '@types/react': 18.0.28
+  '@types/react': 18.0.29
   autoprefixer: ^10.4.14
   eslint: 8.36.0
   eslint-config-next: 13.2.4
@@ -43,7 +43,7 @@ devDependencies:
   '@playwright/test': 1.31.2
   '@trivago/prettier-plugin-sort-imports': 4.1.1_prettier@2.8.4
   '@types/node': 18.15.2
-  '@types/react': 18.0.28
+  '@types/react': 18.0.29
   autoprefixer: 10.4.14_postcss@8.4.21
   eslint: 8.36.0
   eslint-config-next: 13.2.4_j4766f7ecgqbon3u7zlxn5zszu
@@ -452,8 +452,8 @@ packages:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
     dev: true
 
-  /@types/react/18.0.28:
-    resolution: {integrity: sha512-RD0ivG1kEztNBdoAK7lekI9M+azSnitIn85h4iOiaLjaTrMjzslhaqCGaI4IyCJ1RljWiLCEu4jyrLLgqxBTew==}
+  /@types/react/18.0.29:
+    resolution: {integrity: sha512-wXHktgUABxplw1+UnljseDq4+uztQyp2tlWZRIxHlpchsCFqiYkvaDS8JR7eKOQm8wziTH/el5qL7D6gYNkYcw==}
     dependencies:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.2
