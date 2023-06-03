@@ -13,31 +13,31 @@
     "fmt": "prettier --write ."
   },
   "dependencies": {
-    "@next/env": "*",
-    "framer-motion": "^10.0.0",
-    "microcms-js-sdk": "^2.3.2",
+    "@next/env": "^13.4.4",
+    "framer-motion": "^10.12.16",
+    "microcms-js-sdk": "^2.5.0",
     "next": "13.4.4",
     "plaiceholder": "^2.5.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.8.0",
-    "react-intersection-observer": "^9.4.3",
+    "react-icons": "^4.9.0",
+    "react-intersection-observer": "^9.4.4",
     "react-responsive-carousel": "^3.2.23",
-    "sharp": "^0.32.0"
+    "sharp": "^0.32.1"
   },
   "devDependencies": {
-    "@playwright/test": "^1.31.2",
+    "@playwright/test": "^1.34.3",
     "@trivago/prettier-plugin-sort-imports": "^4.1.1",
-    "@types/node": "^18.15.2",
+    "@types/node": "^18.16.16",
     "@types/react": "18.2.7",
     "autoprefixer": "^10.4.14",
     "eslint": "8.41.0",
     "eslint-config-next": "13.4.4",
-    "eslint-config-prettier": "^8.7.0",
-    "next-sitemap": "^4.0.0",
-    "postcss": "^8.4.21",
-    "prettier": "^2.8.4",
-    "tailwindcss": "^3.2.7",
+    "eslint-config-prettier": "^8.8.0",
+    "next-sitemap": "^4.1.3",
+    "postcss": "^8.4.24",
+    "prettier": "^2.8.8",
+    "tailwindcss": "^3.3.2",
     "typescript": "5.0.4"
   }
 }
