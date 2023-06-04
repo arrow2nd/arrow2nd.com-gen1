@@ -1,3 +1,5 @@
+"use client";
+
 import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -49,8 +51,8 @@ const Card = ({
             <Image {...imageProps} alt={alt} placeholder="blur" />
           </div>
           <div className="mt-4 ml-1">
-            <p>{title}</p>
-            <p className="text-sm font-normal">{description}</p>
+            <p className="font-medium">{title}</p>
+            <p className="text-sm">{description}</p>
           </div>
         </motion.div>
       </Link>

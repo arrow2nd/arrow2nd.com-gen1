@@ -1,36 +1,25 @@
-import type {
-  GetStaticPaths,
-  GetStaticPropsContext,
-  InferGetStaticPropsType,
-  NextPage
-} from "next";
 import { getPlaiceholder } from "plaiceholder";
 
-import Category from "components/category";
+import Category, { CategoryProps } from "components/category";
 
 import { Client } from "libs/client";
 import { toStringId } from "libs/util";
 
-import type { CategoryContent } from "types/cms/category";
-import type { WorkContent } from "types/cms/work";
-import type { DynamicImage } from "types/image";
+import { CategoryContent } from "types/cms/category";
+import { WorkContent } from "types/cms/work";
+import { DynamicImage } from "types/image";
 
-type Props = InferGetStaticPropsType<typeof getStaticProps>;
-
-const CategoryPage: NextPage<Props> = (props: Props) => <Category {...props} />;
-
-export default CategoryPage;
-
-export const getStaticPaths: GetStaticPaths = async () => {
-  const data = await Client.getList<CategoryContent>({ endpoint: "category" });
-  const paths = data.contents.map((content) => `/category/${content.name}`);
-
-  return { paths, fallback: false };
+type Props = {
+  params: { name: string };
 };
 
-export const getStaticProps = async (context: GetStaticPropsContext) => {
-  const { params } = context;
+export async function generateStaticParams(): Promise<{ name: string }[]> {
+  const data = await Client.getList<CategoryContent>({ endpoint: "category" });
+  const params = data.contents.map(({ name }) => ({ name }));
+  return params;
+}
 
+async function fetchCategory(params: { name: string }): Promise<CategoryProps> {
   // 指定されたカテゴリを取得
   const currentCategory = params?.name && toStringId(params.name);
   if (!currentCategory) {
@@ -71,11 +60,16 @@ export const getStaticProps = async (context: GetStaticPropsContext) => {
   );
 
   return {
-    props: {
-      currentCategory,
-      categories: categories.contents,
-      contents: works.contents,
-      thumbnails
-    }
+    currentCategory,
+    categories: categories.contents,
+    contents: works.contents,
+    thumbnails
   };
-};
+}
+
+export default async function CategoryPage({
+  params
+}: Props): Promise<JSX.Element> {
+  const category = await fetchCategory(params);
+  return <Category {...category} />;
+}
