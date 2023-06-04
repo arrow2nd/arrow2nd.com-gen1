@@ -1,3 +1,5 @@
+"use client";
+
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
@@ -36,7 +38,7 @@ const Section = ({
       variants={fadeInUp}
       data-testid={dataTestId}
     >
-      <h3 className="block text-2xl">{title}</h3>
+      <h3 className="block font-medium text-2xl">{title}</h3>
       {children}
     </motion.div>
   );

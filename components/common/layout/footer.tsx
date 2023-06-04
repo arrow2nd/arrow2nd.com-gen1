@@ -5,7 +5,9 @@ const Footer = (): JSX.Element => (
     className="w-full px-10 py-12 flex items-center text-main"
     data-testid="footer"
   >
-    <p className="text-base">{`(c) ${new Date().getFullYear()}`} arrow2nd</p>
+    <p className="font-medium text-base">
+      {`(c) ${new Date().getFullYear()}`} arrow2nd
+    </p>
     <Accounts className="ml-auto" />
   </div>
 );

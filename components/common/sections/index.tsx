@@ -19,7 +19,7 @@ const Sections = ({ className = "", contents }: Props): JSX.Element => {
         title={title}
         dataTestId={idx === sectionMax ? "last-section" : undefined}
       >
-        <div className="mt-2 text-sm md:text-base font-normal">{lines}</div>
+        <div className="mt-2 text-sm md:text-base">{lines}</div>
       </Section>
     );
   });

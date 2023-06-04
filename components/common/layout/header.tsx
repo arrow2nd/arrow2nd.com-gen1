@@ -20,7 +20,7 @@ const Header = ({ backPagePath }: Props): JSX.Element => {
   ));
 
   return (
-    <div className="px-10 py-12 flex flex-row w-full items-center text-main">
+    <div className="px-10 py-12 flex flex-row w-full items-center font-medium text-main">
       <Link href={backPagePath || "/"} scroll={false}>
         <motion.span className="inline-block text-2xl" {...hoverLink}>
           {backPagePath === "" ? <RiHome5Line /> : <RiArrowLeftSLine />}
